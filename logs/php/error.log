@@ -20,3 +20,80 @@ Stack trace:
 [16-May-2019 14:09:09 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
 [16-May-2019 14:09:09 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
 [16-May-2019 14:09:10 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[16-May-2019 21:31:57 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-banner.php on line 14
+[16-May-2019 21:32:00 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-banner.php on line 14
+[16-May-2019 21:33:45 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-banner.php on line 14
+[16-May-2019 22:04:58 UTC] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING) in /app/public/wp-content/themes/meal/section-templates/banner.php on line 4
+[16-May-2019 22:25:33 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:25:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function apply_filter() in /app/public/wp-content/themes/meal/section-templates/banner.php:30
+Stack trace:
+#0 /app/public/wp-includes/template.php(724): require()
+#1 /app/public/wp-includes/template.php(671): load_template('/app/public/wp-...', false)
+#2 /app/public/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /app/public/wp-content/themes/meal/index.php(10): get_template_part('section-templat...')
+#4 /app/public/wp-includes/template-loader.php(78): include('/app/public/wp-...')
+#5 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#6 /app/public/index.php(17): require('/app/public/wp-...')
+#7 {main}
+  thrown in /app/public/wp-content/themes/meal/section-templates/banner.php on line 30
+[16-May-2019 22:26:05 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:26:05 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function apply_filters(), 1 passed in /app/public/wp-content/themes/meal/section-templates/banner.php on line 30 and exactly 2 expected in /app/public/wp-includes/plugin.php:178
+Stack trace:
+#0 /app/public/wp-content/themes/meal/section-templates/banner.php(30): apply_filters('')
+#1 /app/public/wp-includes/template.php(724): require('/app/public/wp-...')
+#2 /app/public/wp-includes/template.php(671): load_template('/app/public/wp-...', false)
+#3 /app/public/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#4 /app/public/wp-content/themes/meal/index.php(10): get_template_part('section-templat...')
+#5 /app/public/wp-includes/template-loader.php(78): include('/app/public/wp-...')
+#6 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#7 /app/public/index.php(17): require('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-includes/plugin.php on line 178
+[16-May-2019 22:28:27 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:28:27 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function apply_filters(), 1 passed in /app/public/wp-content/themes/meal/section-templates/banner.php on line 30 and exactly 2 expected in /app/public/wp-includes/plugin.php:178
+Stack trace:
+#0 /app/public/wp-content/themes/meal/section-templates/banner.php(30): apply_filters('')
+#1 /app/public/wp-includes/template.php(724): require('/app/public/wp-...')
+#2 /app/public/wp-includes/template.php(671): load_template('/app/public/wp-...', false)
+#3 /app/public/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#4 /app/public/wp-content/themes/meal/index.php(10): get_template_part('section-templat...')
+#5 /app/public/wp-includes/template-loader.php(78): include('/app/public/wp-...')
+#6 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#7 /app/public/index.php(17): require('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-includes/plugin.php on line 178
+[16-May-2019 22:28:39 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:28:46 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:28:50 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:29:28 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:29:32 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:31:22 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:31:28 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:31:32 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:32:18 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:32:27 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:32:43 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:32:51 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:32:55 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:33:25 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:33:29 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:34:38 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:34:41 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[16-May-2019 22:35:03 UTC] PHP Warning:  stripos() expects parameter 1 to be string, array given in /app/public/wp-includes/formatting.php on line 4192
+[17-May-2019 07:59:16 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[17-May-2019 07:59:17 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[17-May-2019 07:59:17 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[17-May-2019 09:16:37 UTC] PHP Fatal error:  Cannot redeclare meal_section_picker_metabox() (previously declared in /app/public/wp-content/themes/meal/inc/metaboxes/page.php:5) in /app/public/wp-content/themes/meal/inc/metaboxes/section-featured.php on line 5
+[17-May-2019 09:16:39 UTC] PHP Fatal error:  Cannot redeclare meal_section_picker_metabox() (previously declared in /app/public/wp-content/themes/meal/inc/metaboxes/page.php:5) in /app/public/wp-content/themes/meal/inc/metaboxes/section-featured.php on line 5
+[17-May-2019 13:22:10 UTC] PHP Warning:  Illegal string offset 'button_target' in /app/public/wp-content/themes/meal/section-templates/banner.php on line 40
+[17-May-2019 13:22:10 UTC] PHP Warning:  Illegal string offset 'button_title' in /app/public/wp-content/themes/meal/section-templates/banner.php on line 41
+[17-May-2019 13:22:14 UTC] PHP Warning:  Illegal string offset 'button_target' in /app/public/wp-content/themes/meal/section-templates/banner.php on line 40
+[17-May-2019 13:22:14 UTC] PHP Warning:  Illegal string offset 'button_title' in /app/public/wp-content/themes/meal/section-templates/banner.php on line 41
+[17-May-2019 13:24:42 UTC] PHP Warning:  Illegal string offset 'button_target' in /app/public/wp-content/themes/meal/section-templates/banner.php on line 40
+[17-May-2019 13:24:42 UTC] PHP Warning:  Illegal string offset 'button_title' in /app/public/wp-content/themes/meal/section-templates/banner.php on line 41
+[17-May-2019 13:24:46 UTC] PHP Warning:  Illegal string offset 'button_target' in /app/public/wp-content/themes/meal/section-templates/banner.php on line 40
+[17-May-2019 13:24:46 UTC] PHP Warning:  Illegal string offset 'button_title' in /app/public/wp-content/themes/meal/section-templates/banner.php on line 41
+[17-May-2019 13:25:30 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[17-May-2019 14:04:30 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[17-May-2019 14:04:30 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[17-May-2019 14:04:31 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
