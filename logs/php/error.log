@@ -109,3 +109,7 @@ Stack trace:
 [22-May-2019 10:47:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/meal/section-templates/gallery.php on line 33
 [22-May-2019 10:50:12 UTC] PHP Warning:  Illegal string offset 'meal-section-gallery' in /app/public/wp-content/themes/meal/section-templates/gallery.php on line 30
 [22-May-2019 10:50:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/meal/section-templates/gallery.php on line 33
+[23-May-2019 13:46:18 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-banner.php on line 19
+[23-May-2019 13:46:18 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-featured.php on line 18
+[23-May-2019 13:46:18 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-gallery.php on line 19
+[23-May-2019 13:46:18 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-chef.php on line 19
