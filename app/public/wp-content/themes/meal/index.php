@@ -117,9 +117,129 @@ get_header();
         </div> <!-- .section -->
         
 
-        <div class="section bg-white pt-2 pb-2 text-center" data-aos="fade">
-          <p><img src="<?php echo get_template_directory_uri() ?>/assets/images/bg_hero.png" alt="Free Website Template for Restaurants by Free-Template.co" class="img-fluid"></p>
-        </div> <!-- .section -->
+        <!-- PORTFIOLIO AREA START -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="portfolio-filter">
+                        <li data-filter="*" class="active">All</li>
+                        <li data-filter=".agency">Salad</li>
+                        <li data-filter=".design">Design</li>
+                        <li data-filter=".app-design">App Design</li>
+                        <li data-filter=".branding">Branding</li>
+                        <li data-filter=".something">something</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-list">
+                <div class="col-md-4 agency desing">
+                    <div class="single-portfolio-item" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/images/photo-1.jpg);">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-table">
+                                <div class="portfolio-hover-tablecell">
+                                    <h4>Project Design</h4>
+                                    <a href="single-portfolio.html">cat 1</a>
+                                    <a href="single-portfolio.html">cat 2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 app-design">
+                    <div class="single-portfolio-item"  style="background-image: url(<?php echo  get_template_directory_uri() ?>/assets/images/photo-2.jpg);">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-table">
+                                <div class="portfolio-hover-tablecell">
+                                    <h4>Project Design</h4>
+                                    <a href="single-portfolio.html">cat 1</a>
+                                    <a href="single-portfolio.html">cat 2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 design branding">
+                    <div class="single-portfolio-item" style="background-image: url(<?php echo  get_template_directory_uri() ?>/assets/images/photo-3.jpg);">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-table">
+                                <div class="portfolio-hover-tablecell">
+                                    <h4>Project Design</h4>
+                                    <a href="single-portfolio.html">cat 1</a>
+                                    <a href="single-portfolio.html">cat 2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 something">
+                    <div class="single-portfolio-item" style="background-image: url(<?php echo  get_template_directory_uri() ?>/assets/images/photo-4.jpg);">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-table">
+                                <div class="portfolio-hover-tablecell">
+                                    <h4>Project Design</h4>
+                                    <a href="single-portfolio.html">cat 1</a>
+                                    <a href="single-portfolio.html">cat 2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 branding design app-design">
+                    <div class="single-portfolio-item" style="background-image: url(<?php echo  get_template_directory_uri() ?>/assets/images/photo-5.jpg);">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-table">
+                                <div class="portfolio-hover-tablecell">
+                                    <h4>Project Design</h4>
+                                    <a href="single-portfolio.html">cat 1</a>
+                                    <a href="single-portfolio.html">cat 2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 agency something">
+                    <div class="single-portfolio-item" style="background-image: url(<?php echo  get_template_directory_uri() ?>/assets/images/photo-6.jpg);">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-table">
+                                <div class="portfolio-hover-tablecell">
+                                    <h4>Project Design</h4>
+                                    <a href="single-portfolio.html">cat 1</a>
+                                    <a href="single-portfolio.html">cat 2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 app-design something agency branding">
+                    <div class="single-portfolio-item" style="background-image: url(<?php echo  get_template_directory_uri() ?>/assets/images/photo-7.jpg);">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-table">
+                                <div class="portfolio-hover-tablecell">
+                                    <h4>Project Design</h4>
+                                    <a href="single-portfolio.html">cat 1</a>
+                                    <a href="single-portfolio.html">cat 2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 agency design">
+                    <div class="single-portfolio-item" style="background-image: url(<?php echo  get_template_directory_uri() ?>/assets/images/photo-8.jpg);">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-table">
+                                <div class="portfolio-hover-tablecell">
+                                    <h4>Project Design</h4>
+                                    <a href="single-portfolio.html">cat 1</a>
+                                    <a href="single-portfolio.html">cat 2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PORTFIOLIO AREA END -->
 
         <div class="section bg-white" data-aos="fade-up">
           <div class="container">

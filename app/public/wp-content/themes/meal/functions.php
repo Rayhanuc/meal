@@ -5,6 +5,7 @@ require_once get_theme_file_path('/inc/metaboxes/section.php');
 require_once get_theme_file_path('/inc/metaboxes/page.php');
 require_once get_theme_file_path('/inc/metaboxes/section-banner.php');
 require_once get_theme_file_path('/inc/metaboxes/section-featured.php');
+require_once get_theme_file_path('/inc/metaboxes/section-gallery.php');
 
 
 define( 'CS_ACTIVE_FRAMEWORK',   false  ); // default true
@@ -68,7 +69,11 @@ function meal_assets(){
 	wp_enqueue_style('ionicons-css',get_theme_file_uri().'/assets/fonts/ionicons/css/ionicons.min.css',null,'1.0');
 	wp_enqueue_style('fontawesome-css',get_theme_file_uri().'/assets/fonts/fontawesome/css/font-awesome.min.css',null,'1.0');
 	wp_enqueue_style('flaticon-css',get_theme_file_uri().'/assets/fonts/flaticon/font/flaticon.css',null,'1.0');
+
+	// wp_enqueue_script("meal-bootstrapcdn-css","//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css",null,'1.11.1');
+
 	wp_enqueue_style('meal-style-css',get_template_directory_uri().'/assets/css/style.css',null,'1.0');
+	wp_enqueue_style('meal-portfioio-css',get_template_directory_uri().'/assets/css/portfioio.css',null,'1.0');
 	wp_enqueue_style('meal-style',get_stylesheet_uri());
 
 
@@ -86,11 +91,19 @@ function meal_assets(){
     wp_enqueue_script("jquery-easing-js",get_theme_file_uri("/assets/js/jquery.easing.1.3.js"),array('jquery'),'1.3',true);
     wp_enqueue_script("aos-js",get_theme_file_uri("/assets/js/aos.js"),array('jquery'),array('jquery'),'1.0',true);
 
-    wp_enqueue_script("isotope-js",get_theme_file_uri("/assets/js/isotope.pkgd.min.js"),array('jquery'),'1.0',true);
+    wp_enqueue_script("isotope-js",'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js');
     // Google map
     wp_enqueue_script("google-map-js",'//maps.googleapis.com/maps/api/js?key=AIzaSyDPUMolq8BwAX00VnlQQy2ko-D6JEOGIz0',null,'1.0',true);
     
     wp_enqueue_script("magnific-popup-options-js",get_theme_file_uri("/assets/js/magnific-popup-options.js"),array('jquery'),'1.0',true);
+
+
+    
+    /*wp_enqueue_script("meal-bootstrapcdn-js","//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js",array('jquery','jquery-1.11.1'),null,'1.11.1',true);
+    wp_enqueue_script("meal-jquery-js","//code.jquery.com/jquery-1.11.1.min.js",null,'1.11.1',true);*/
+
+
+    wp_enqueue_script("meal-portfolio-js",get_theme_file_uri("/assets/js/portfolio.js"),array('jquery'),'1.0',true);
     wp_enqueue_script("meal-main-js",get_theme_file_uri("/assets/js/main.js"),array('jquery'),'1.0',true);
 }
 add_action('wp_enqueue_scripts','meal_assets');

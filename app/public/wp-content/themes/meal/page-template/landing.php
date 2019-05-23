@@ -28,24 +28,16 @@ get_header();
 
         ?>
 
-        
 
-        <div class="section pb-3 bg-white" id="section-about" data-aos="fade-up">
-          <div class="container">
-            <div class="row align-items-center justify-content-center">
-              <div class="col-md-12 col-lg-8 section-heading">
-                <h2 class="heading mb-5">The Restaurant</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- .section -->
-        
+      <!-- Portfolio section -->
+        <?php
 
-        <div class="section bg-white pt-2 pb-2 text-center" data-aos="fade">
-          <p><img src="<?php echo get_template_directory_uri() ?>/assets/images/bg_hero.png" alt="Free Website Template for Restaurants by Free-Template.co" class="img-fluid"></p>
-        </div> <!-- .section -->
+        $section_id = 12;
+        get_template_part( 'section-templates/gallery' );
+
+        ?>
+
+        
 
         <div class="section bg-white" data-aos="fade-up">
           <div class="container">
