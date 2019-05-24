@@ -113,3 +113,56 @@ Stack trace:
 [23-May-2019 13:46:18 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-featured.php on line 18
 [23-May-2019 13:46:18 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-gallery.php on line 19
 [23-May-2019 13:46:18 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-chef.php on line 19
+[24-May-2019 09:42:13 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-banner.php on line 19
+[24-May-2019 09:42:13 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-featured.php on line 18
+[24-May-2019 09:42:13 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-gallery.php on line 19
+[24-May-2019 09:42:13 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-chef.php on line 17
+[24-May-2019 09:42:13 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-services.php on line 17
+[24-May-2019 10:07:33 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function apply_filters(), 0 passed in /app/public/wp-content/themes/meal/section-templates/services.php on line 49 and exactly 2 expected in /app/public/wp-includes/plugin.php:178
+Stack trace:
+#0 /app/public/wp-content/themes/meal/section-templates/services.php(49): apply_filters()
+#1 /app/public/wp-includes/template.php(724): require('/app/public/wp-...')
+#2 /app/public/wp-includes/template.php(671): load_template('/app/public/wp-...', false)
+#3 /app/public/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#4 /app/public/wp-content/themes/meal/page-template/landing.php(230): get_template_part('section-templat...')
+#5 /app/public/wp-includes/template-loader.php(78): include('/app/public/wp-...')
+#6 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#7 /app/public/index.php(17): require('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-includes/plugin.php on line 178
+[24-May-2019 10:09:05 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function apply_filters(), 0 passed in /app/public/wp-content/themes/meal/section-templates/services.php on line 49 and exactly 2 expected in /app/public/wp-includes/plugin.php:178
+Stack trace:
+#0 /app/public/wp-content/themes/meal/section-templates/services.php(49): apply_filters()
+#1 /app/public/wp-includes/template.php(724): require('/app/public/wp-...')
+#2 /app/public/wp-includes/template.php(671): load_template('/app/public/wp-...', false)
+#3 /app/public/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#4 /app/public/wp-content/themes/meal/page-template/landing.php(230): get_template_part('section-templat...')
+#5 /app/public/wp-includes/template-loader.php(78): include('/app/public/wp-...')
+#6 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#7 /app/public/index.php(17): require('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-includes/plugin.php on line 178
+[24-May-2019 10:11:13 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function apply_filters(), 0 passed in /app/public/wp-content/themes/meal/section-templates/services.php on line 49 and exactly 2 expected in /app/public/wp-includes/plugin.php:178
+Stack trace:
+#0 /app/public/wp-content/themes/meal/section-templates/services.php(49): apply_filters()
+#1 /app/public/wp-includes/template.php(724): require('/app/public/wp-...')
+#2 /app/public/wp-includes/template.php(671): load_template('/app/public/wp-...', false)
+#3 /app/public/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#4 /app/public/wp-content/themes/meal/page-template/landing.php(230): get_template_part('section-templat...')
+#5 /app/public/wp-includes/template-loader.php(78): include('/app/public/wp-...')
+#6 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#7 /app/public/index.php(17): require('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-includes/plugin.php on line 178
+[24-May-2019 10:11:58 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function apply_filters(), 0 passed in /app/public/wp-content/themes/meal/section-templates/services.php on line 49 and exactly 2 expected in /app/public/wp-includes/plugin.php:178
+Stack trace:
+#0 /app/public/wp-content/themes/meal/section-templates/services.php(49): apply_filters()
+#1 /app/public/wp-includes/template.php(724): require('/app/public/wp-...')
+#2 /app/public/wp-includes/template.php(671): load_template('/app/public/wp-...', false)
+#3 /app/public/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#4 /app/public/wp-content/themes/meal/page-template/landing.php(230): get_template_part('section-templat...')
+#5 /app/public/wp-includes/template-loader.php(78): include('/app/public/wp-...')
+#6 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#7 /app/public/index.php(17): require('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-includes/plugin.php on line 178

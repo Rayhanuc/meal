@@ -41,3 +41,4 @@
 [23-May-2019 17:07:47] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
 [23-May-2019 17:25:39] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
 [23-May-2019 17:32:28] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[24-May-2019 10:10:43] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it

@@ -28,7 +28,7 @@ function meal_section_type_metabox($metaboxes) {
 						'gallery' => __('Gallery','meal'),
 						'chef' => __('Chef','meal'),
 						'menu' => __('Menu','meal'),
-						'Services' => __('Services','meal'),
+						'services' => __('Services','meal'),
 						'reservation' => __('Reservation','meal'),
 						'testimonials' => __('Testimonials','meal'),
 						'contact' => __('Contact','meal'),

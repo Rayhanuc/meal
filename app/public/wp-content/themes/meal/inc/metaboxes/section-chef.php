@@ -1,8 +1,6 @@
 <?php
 
 
-
-
 function meal_chef_section_metabox($metaboxes) {
 
 	$section_id = 0;
