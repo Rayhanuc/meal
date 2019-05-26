@@ -17,7 +17,7 @@ INSERT INTO `wp_usermeta` VALUES
 (13,1,"wp_user_level","10"),
 (14,1,"dismissed_wp_pointers",""),
 (15,1,"show_welcome_panel","1"),
-(16,1,"session_tokens","a:1:{s:64:\"21ddb88dfb804bceb00a6731da9642e597d2a54e940db789cafa41671944bd23\";a:4:{s:10:\"expiration\";i:1558613313;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36\";s:5:\"login\";i:1558440513;}}"),
+(16,1,"session_tokens","a:1:{s:64:\"c310fcf071367c3118d592dea7d6b7c682aa57c4465c38075ede435768208b7f\";a:4:{s:10:\"expiration\";i:1558791678;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36\";s:5:\"login\";i:1558618878;}}"),
 (17,1,"wp_dashboard_quick_press_last_post_id","50"),
 (18,1,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (19,1,"wp_user-settings","libraryContent=browse"),

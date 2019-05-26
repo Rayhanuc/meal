@@ -166,3 +166,33 @@ Stack trace:
 #7 /app/public/index.php(17): require('/app/public/wp-...')
 #8 {main}
   thrown in /app/public/wp-includes/plugin.php on line 178
+[24-May-2019 13:30:53 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /app/public/wp-content/themes/meal/inc/metaboxes/taxomomy-featured.php on line 19
+[24-May-2019 13:33:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aff_filters() in /app/public/wp-content/themes/meal/inc/metaboxes/taxomomy-featured.php:22
+Stack trace:
+#0 /app/public/wp-content/themes/meal/functions.php(11): require_once()
+#1 /app/public/wp-settings.php(499): include('/app/public/wp-...')
+#2 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#3 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#4 /app/public/wp-admin/admin.php(34): require_once('/app/public/wp-...')
+#5 /app/public/wp-admin/term.php(11): require_once('/app/public/wp-...')
+#6 {main}
+  thrown in /app/public/wp-content/themes/meal/inc/metaboxes/taxomomy-featured.php on line 22
+[24-May-2019 13:35:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filters() in /app/public/wp-content/themes/meal/inc/metaboxes/taxomomy-featured.php:21
+Stack trace:
+#0 /app/public/wp-content/themes/meal/functions.php(11): require_once()
+#1 /app/public/wp-settings.php(499): include('/app/public/wp-...')
+#2 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#3 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#4 /app/public/wp-admin/admin.php(34): require_once('/app/public/wp-...')
+#5 /app/public/wp-admin/term.php(11): require_once('/app/public/wp-...')
+#6 {main}
+  thrown in /app/public/wp-content/themes/meal/inc/metaboxes/taxomomy-featured.php on line 21
+[24-May-2019 15:01:34 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-banner.php on line 19
+[24-May-2019 15:01:34 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-featured.php on line 18
+[24-May-2019 15:01:34 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-gallery.php on line 19
+[24-May-2019 15:01:34 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-chef.php on line 17
+[24-May-2019 15:01:34 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-services.php on line 17
+[26-May-2019 08:51:16 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[26-May-2019 08:51:17 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[26-May-2019 08:51:17 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[26-May-2019 09:08:00 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /app/public/wp-content/themes/meal/section-templates/menu.php on line 63

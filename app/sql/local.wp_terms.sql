@@ -6,4 +6,8 @@ INSERT INTO `wp_terms` VALUES
 (2,"Chicken","chicken",0),
 (3,"Beef","beef",0),
 (4,"Burger","burger",0),
-(5,"Salad","salad",0);
+(5,"Salad","salad",0),
+(6,"Desserts","desserts",0),
+(7,"BREAKFAST","breakfast",0),
+(8,"Brunch","brunch",0),
+(9,"Dinner","dinner",0);

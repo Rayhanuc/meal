@@ -641,11 +641,12 @@ textarea.form-control {
 }
 
 .menu-food-item .text img {
-  width: 100px;
+  width: 130px;
   margin-bottom: 20px;
   border-radius: 7px;
   float: left;
   margin-right: 30px;
+  height: 130px;
 }
 
 @media (max-width: 991.98px) {
