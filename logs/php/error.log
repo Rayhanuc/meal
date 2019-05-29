@@ -196,3 +196,67 @@ Stack trace:
 [26-May-2019 08:51:17 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
 [26-May-2019 08:51:17 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
 [26-May-2019 09:08:00 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /app/public/wp-content/themes/meal/section-templates/menu.php on line 63
+[26-May-2019 13:50:44 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-banner.php on line 19
+[26-May-2019 13:50:44 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-featured.php on line 18
+[26-May-2019 13:50:44 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-gallery.php on line 19
+[26-May-2019 13:50:44 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-chef.php on line 17
+[26-May-2019 13:50:44 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-services.php on line 17
+[26-May-2019 13:53:25 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-banner.php on line 19
+[26-May-2019 13:53:25 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-featured.php on line 18
+[26-May-2019 13:53:25 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-gallery.php on line 19
+[26-May-2019 13:53:25 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-chef.php on line 17
+[26-May-2019 13:53:25 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-services.php on line 17
+[26-May-2019 16:56:26 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/meal/functions.php on line 146
+[26-May-2019 17:08:47 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/meal/functions.php on line 146
+[26-May-2019 17:09:18 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /app/public/wp-content/themes/meal/functions.php on line 167
+[27-May-2019 11:36:33 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[27-May-2019 11:36:33 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[27-May-2019 11:36:34 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[27-May-2019 14:05:17 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[27-May-2019 14:05:17 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[27-May-2019 14:05:18 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[28-May-2019 10:21:16 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[28-May-2019 10:21:17 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[28-May-2019 10:21:18 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[28-May-2019 10:26:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_page_templates() in /app/public/wp-content/themes/meal/functions.php:115
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): meal_assets('')
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /app/public/wp-includes/script-loader.php(2537): do_action('wp_enqueue_scri...')
+#4 /app/public/wp-includes/class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /app/public/wp-includes/general-template.php(2745): do_action('wp_head')
+#8 /app/public/wp-content/themes/meal/header.php(6): wp_head()
+#9 /app/public/wp-includes/template.php(722): require_once('/app/public/wp-...')
+#10 /app/public/wp-includes/template.php(671): load_template('/app/public/wp-...', true)
+#11 /app/public/wp-includes/general-template in /app/public/wp-content/themes/meal/functions.php on line 115
+[28-May-2019 10:37:23 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-banner.php on line 19
+[28-May-2019 10:37:23 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-featured.php on line 18
+[28-May-2019 10:37:23 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-gallery.php on line 19
+[28-May-2019 10:37:23 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-chef.php on line 17
+[28-May-2019 10:37:23 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-services.php on line 17
+[29-May-2019 13:30:25 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[29-May-2019 13:30:25 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[29-May-2019 13:30:25 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[29-May-2019 13:49:14 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-banner.php on line 19
+[29-May-2019 13:49:14 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-featured.php on line 18
+[29-May-2019 13:49:14 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-gallery.php on line 19
+[29-May-2019 13:49:14 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-chef.php on line 17
+[29-May-2019 13:49:14 UTC] PHP Warning:  Illegal string offset 'type' in /app/public/wp-content/themes/meal/inc/metaboxes/section-services.php on line 17
+[29-May-2019 17:51:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_page_templates() in /app/public/wp-content/themes/meal/functions.php:114
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): meal_assets('')
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /app/public/wp-includes/script-loader.php(2537): do_action('wp_enqueue_scri...')
+#4 /app/public/wp-includes/class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /app/public/wp-includes/general-template.php(2745): do_action('wp_head')
+#8 /app/public/wp-content/themes/meal/header.php(6): wp_head()
+#9 /app/public/wp-includes/template.php(722): require_once('/app/public/wp-...')
+#10 /app/public/wp-includes/template.php(671): load_template('/app/public/wp-...', true)
+#11 /app/public/wp-includes/general-template in /app/public/wp-content/themes/meal/functions.php on line 114
+[29-May-2019 19:12:03 UTC] PHP Fatal error:  Cannot redeclare meal_process_reservation() (previously declared in /app/public/wp-content/themes/meal/functions.php:151) in /app/public/wp-content/themes/meal/functions.php on line 228

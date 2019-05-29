@@ -1,8 +1,8 @@
-(function ($) {
+(function (jQuery) {
     "use strict";
 
-    jQuery(document).ready(function($){
-        $(".portfolio-list").isotope({
+    jQuery(document).ready(function(jQuery){
+        jQuery(".portfolio-list").isotope({
             layoutMode: 'masonry',
             masonry: {
                 columnwidth: '.col-md-4',
@@ -10,12 +10,12 @@
             }
         });
 
-        $(".portfolio-filter li").on('click', function() {
-            $(".portfolio-filter li").removeClass("active");
-            $(this).addClass("active");
+        jQuery(".portfolio-filter li").on('click', function() {
+            jQuery(".portfolio-filter li").removeClass("active");
+            jQuery(this).addClass("active");
 
             var filterValue = $(this).attr("data-filter");
-            $(".portfolio-list").isotope({
+            jQuery(".portfolio-list").isotope({
                 filter: filterValue,
             });
         });

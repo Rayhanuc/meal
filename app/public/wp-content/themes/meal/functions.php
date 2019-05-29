@@ -1,4 +1,4 @@
-<?php
+	<?php
 
 require_once get_theme_file_path('/lib/csf/cs-framework.php'); 
 require_once get_theme_file_path('/inc/metaboxes/section.php');
@@ -66,7 +66,7 @@ function meal_assets(){
 	wp_enqueue_style('bootstrap-css',get_template_directory_uri().'/assets/css/bootstrap.css',null,'1.0');
 	wp_enqueue_style('animate-css',get_template_directory_uri().'/assets/css/animate.css',null,'1.0');
 	wp_enqueue_style('owl.carousel-css',get_template_directory_uri().'/assets/css/owl.carousel.min.css',null,'1.0');
-	wp_enqueue_style('magnific-popup-css',get_template_directory_uri().'/assets/css/magnific-popup.css',null,'1.0');
+	// wp_enqueue_style('magnific-popup-css',get_template_directory_uri().'/assets/css/magnific-popup.css',null,'1.0');
 	wp_enqueue_style('aos-css',get_template_directory_uri().'/assets/css/aos.css',null,'1.0');
 	wp_enqueue_style('bootstrap-datepicker-css',get_template_directory_uri().'/assets/css/bootstrap-datepicker.css',null,'1.0');
 	wp_enqueue_style('jquery.timepicker-css',get_template_directory_uri().'/assets/css/jquery.timepicker.css',null,'1.0');
@@ -89,13 +89,14 @@ function meal_assets(){
     wp_enqueue_script("jquery.waypoints-js",get_theme_file_uri("/assets/js/jquery.waypoints.min.js"),array('jquery'),'1.0',true);
 
     wp_enqueue_script("jquery.magnific-popup-js",get_theme_file_uri("/assets/js/jquery.magnific-popup.min.js"),array('jquery'),'1.3',true);
+    // wp_enqueue_script("jquery.magnific-popup-options-js",get_theme_file_uri("/assets/js/magnific-popup-options.js"),array('jquery'),'1.3',true);
     wp_enqueue_script("bootstrap-datepicker-js",get_theme_file_uri("/assets/js/bootstrap-datepicker.js"),array('jquery'),'1.0',true);
     wp_enqueue_script("jquery-timepicker-js",get_theme_file_uri("/assets/js/jquery.timepicker.min.js"),array('jquery'),'1.0',true);
     wp_enqueue_script("jquery-stellar-js",get_theme_file_uri("/assets/js/jquery.stellar.min.js"),array('jquery'),array('jquery'),'1.0',true);
     wp_enqueue_script("jquery-easing-js",get_theme_file_uri("/assets/js/jquery.easing.1.3.js"),array('jquery'),'1.3',true);
     wp_enqueue_script("aos-js",get_theme_file_uri("/assets/js/aos.js"),array('jquery'),array('jquery'),'1.0',true);
 
-    wp_enqueue_script("isotope-js",'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js');
+    wp_enqueue_script("isotope-js",'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js',array('jquery'));
     // Google map
     wp_enqueue_script("google-map-js",'//maps.googleapis.com/maps/api/js?key=AIzaSyDPUMolq8BwAX00VnlQQy2ko-D6JEOGIz0',null,'1.0',true);
     
@@ -103,11 +104,21 @@ function meal_assets(){
 
 
     
-    /*wp_enqueue_script("meal-bootstrapcdn-js","//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js",array('jquery','jquery-1.11.1'),null,'1.11.1',true);
-    wp_enqueue_script("meal-jquery-js","//code.jquery.com/jquery-1.11.1.min.js",null,'1.11.1',true);*/
+    wp_enqueue_script("meal-bootstrapcdn-js","//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js",array('jquery'),null,'3.3.0',true);
+    
+    // wp_enqueue_script("meal-jquery-js","//code.jquery.com/jquery-1.11.1.min.js",null,'1.11.1',true);
 
 
     wp_enqueue_script("meal-portfolio-js",get_theme_file_uri("/assets/js/portfolio.js"),array('jquery'),'1.0',true);
+
+
+
+    if (is_page_template( "page-templates/landing.php" )) {    
+    	wp_enqueue_script("meal-reservation-js",get_theme_file_uri("/assets/js/reservation.js"),array('jquery'),'1.0',true);
+    	$ajaxurl = admin_url("admin-ajax.php");
+    	wp_localize_script("meal-reservation-js", "mealurl",array("ajaxurl" => $ajaxurl));
+    }
+
     wp_enqueue_script("meal-main-js",get_theme_file_uri("/assets/js/main.js"),array('jquery'),'1.0',true);
 }
 add_action('wp_enqueue_scripts','meal_assets');
@@ -133,4 +144,111 @@ function get_recipe_category($recipe_id){
 	}
 	return 'Food';
 }
+
+
+
+/*
+1st time code write
+
+function meal_process_reservation() {
+
+	if (check_ajax_referer('reservation','rn' )) {
+		$name = sanitize_text_field($_POST['name']);
+		$email = sanitize_text_field($_POST['email']);
+		$phone = sanitize_text_field($_POST['phone']);
+		$persons = sanitize_text_field($_POST['persons']);
+		$date = sanitize_text_field($_POST['date']);
+		$time = sanitize_text_field($_POST['time']);
+		// $rn = sanitize_text_field($_POST['rn']);
+
+		$data = array(
+			'name' => $name,
+			'email' => $email,
+			'phone' => $phone,
+			'persons' => $persons,
+			'date' => $date,
+			'time' => $time,
+		);
+
+		print_r($data);
+
+		$reservation_arguments = array(
+			'post_type' => 'reservation',
+			'post_author' => 1,
+			'post_date' => date('Y-m-d H:i:s'),
+			'post_status' => 'publish',
+			'post_title' => sprintf('%s - Reservation for %s persons on %s - %s', $name,$persons,$date." : ".$time,$email),
+			'meta_input' => $data
+		);
+
+		$wp_error = '';
+
+		wp_insert_post( $reservation_arguments,$wp_error );
+		if (!$wp_error) {
+			echo "Successful";
+		}
+
+	}else {
+		echo 'Not allowed';
+	}
+	die();
+}
+add_action('wp_ajax_reservation','meal_process_reservation');
+add_action('wp_ajax_nopriv_reservation','meal_process_reservation');*/
+
+
+
+
+
+
+
+
+// 2nd time write ajax related code
+function meal_process_reservation(){
+
+	if (check_ajax_referer('reservation', 'rn')) {
+		$name = sanitize_text_field($_POST['name']);
+		$email = sanitize_text_field($_POST['email']);
+		$phone = sanitize_text_field($_POST['phone']);
+		$persons = sanitize_text_field($_POST['persons']);
+		$date = sanitize_text_field($_POST['date']);
+		$time = sanitize_text_field($_POST['time']);
+
+		$data = array(
+			'name' => $name,
+			'email' => $email,
+			'phone' => $phone,
+			'persons' => $persons,
+			'date' => $date,
+			'time' => $time,
+
+		);
+		print_r($data);
+	}else {
+		echo 'Not allowed';
+	}
+
+	die();
+}
+add_action('wp_ajax_reservation','meal_process_reservation');
+add_action('wp_ajax_nopriv_reservation','meal_process_reservation');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

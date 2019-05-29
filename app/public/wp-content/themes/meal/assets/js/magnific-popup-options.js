@@ -1,7 +1,7 @@
-$(document).ready(function() {
+jQuery(document).ready(function() {
   // MagnificPopup
 	var magnifPopup = function() {
-		$('.image-popup').magnificPopup({
+		jQuery('.image-popup').magnificPopup({
 			type: 'image',
 			removalDelay: 300,
 			mainClass: 'mfp-with-zoom',
@@ -27,7 +27,7 @@ $(document).ready(function() {
 	};
 
 	var magnifVideo = function() {
-		$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		jQuery('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
         disableOn: 700,
         type: 'iframe',
         mainClass: 'mfp-fade',

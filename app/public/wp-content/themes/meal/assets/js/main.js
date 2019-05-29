@@ -3,11 +3,11 @@ AOS.init({
 });
   
 
-(function($) {
+;(function(jQuery) {
 
 	'use strict';
 
-  $(window).stellar({
+  jQuery(window).stellar({
     responsive: false,
     parallaxBackgrounds: true,
     parallaxElements: true,
@@ -21,8 +21,8 @@ AOS.init({
   // loader
   var loader = function() {
     setTimeout(function() { 
-      if($('#loader').length > 0) {
-        $('#loader').removeClass('show');
+      if(jQuery('#loader').length > 0) {
+        jQuery('#loader').removeClass('show');
       }
     }, 1);
   };
@@ -31,35 +31,35 @@ AOS.init({
 
   // navigation
   var OnePageNav = function() {
-    var navToggler = $('.js-site-nav-toggle');
-    $(".smoothscroll[href^='#'], #ftco-navbar ul li a[href^='#']").on('click', function(e) {
+    var navToggler = jQuery('.js-site-nav-toggle');
+    jQuery(".smoothscroll[href^='#'], #ftco-navbar ul li a[href^='#']").on('click', function(e) {
       e.preventDefault();
       var hash = this.hash;
         
-      $('html, body').animate({
+      jQuery('html, body').animate({
 
-        scrollTop: $(hash).offset().top
+        scrollTop: jQuery(hash).offset().top
       }, 700, 'easeInOutExpo', function(){
         window.location.hash = hash;
       });
     });
-    $("#ftco-navbar ul li a[href^='#']").on('click', function(e){
+    jQuery("#ftco-navbar ul li a[href^='#']").on('click', function(e){
       if ( navToggler.is(':visible') ) {
         navToggler.click();
       }
     });
 
-    // $('body').on('activate.bs.scrollspy', function () {
+    // jQuery('body').on('activate.bs.scrollspy', function () {
     //   console.log('nice');
     // })
   };
   OnePageNav();
 
-  $(window).scroll(function() {
+  jQuery(window).scroll(function() {
 
-    var $this = $(this),
+    var $this = jQuery(this),
       st = $this.scrollTop(),
-      navbar = $('.site-header');
+      navbar = jQuery('.site-header');
 
     if (st > 150) {
       if ( !navbar.hasClass('scrolled') ) {
@@ -86,42 +86,42 @@ AOS.init({
   }); 
 
 
-  $('.js-site-nav-toggle').on('click', function(e) {
+  jQuery('.js-site-nav-toggle').on('click', function(e) {
 
-    var $this = $(this);
+    var $this = jQuery(this);
     e.preventDefault();
 
  
 
-    if ( $('body').hasClass('menu-open') ) {
+    if ( jQuery('body').hasClass('menu-open') ) {
       $this.removeClass('active');
-        $('.site-menu .site-menu-inner > ul > li').each(function(i) {
+        jQuery('.site-menu .site-menu-inner > ul > li').each(function(i) {
 
-          var that = $(this);
+          var that = jQuery(this);
           setTimeout(function() {
             that.removeClass('is-show');
           }, i * 100);
 
-          // $(this).removeClass('is-show');
+          // jQuery(this).removeClass('is-show');
         });
       
       setTimeout(function() {
-        // $('.site-menu').fadeOut(400);
-        $('.site-menu').removeClass('site-menu-show');
+        // jQuery('.site-menu').fadeOut(400);
+        jQuery('.site-menu').removeClass('site-menu-show');
       }, 800);
 
-      $('body').removeClass('menu-open');
+      jQuery('body').removeClass('menu-open');
     } else {
 
-      // $('.site-menu').fadeIn(400);
-      $('.site-menu').addClass('site-menu-show');
+      // jQuery('.site-menu').fadeIn(400);
+      jQuery('.site-menu').addClass('site-menu-show');
 
       $this.addClass('active');
-      $('body').addClass('menu-open');
+      jQuery('body').addClass('menu-open');
 
       setTimeout(function() {
-        $('.site-menu .site-menu-inner > ul > li').each(function(i) {
-          var that = $(this);
+        jQuery('.site-menu .site-menu-inner > ul > li').each(function(i) {
+          var that = jQuery(this);
           setTimeout(function() {
             that.addClass('is-show');
           }, i * 100);
@@ -135,25 +135,25 @@ AOS.init({
 
 
 	
-	$('nav .dropdown').hover(function(){
-		var $this = $(this);
+	jQuery('nav .dropdown').hover(function(){
+		var $this = jQuery(this);
 		$this.addClass('show');
 		$this.find('> a').attr('aria-expanded', true);
 		$this.find('.dropdown-menu').addClass('show');
 	}, function(){
-		var $this = $(this);
+		var $this = jQuery(this);
 			$this.removeClass('show');
 			$this.find('> a').attr('aria-expanded', false);
 			$this.find('.dropdown-menu').removeClass('show');
 	});
 
 
-	$('#dropdown04').on('show.bs.dropdown', function () {
+	jQuery('#dropdown04').on('show.bs.dropdown', function () {
 	  console.log('show');
 	});
 
 	// home slider
-	$('.home-slider').owlCarousel({
+	jQuery('.home-slider').owlCarousel({
     loop:true,
     autoplay: true,
     margin:0,
@@ -179,7 +179,7 @@ AOS.init({
     }
 	});
 
-  $('.home-slider-loop-false').owlCarousel({
+  jQuery('.home-slider-loop-false').owlCarousel({
     loop:false,
     autoplay: true,
     margin:0,
@@ -206,7 +206,7 @@ AOS.init({
   });
 
 	// owl carousel
-	var majorCarousel = $('.js-carousel-1');
+	var majorCarousel = jQuery('.js-carousel-1');
 	majorCarousel.owlCarousel({
     loop:true,
     autoplay: true,
@@ -236,7 +236,7 @@ AOS.init({
 	});
 
 	// owl carousel
-	var major2Carousel = $('.js-carousel-2');
+	var major2Carousel = jQuery('.js-carousel-2');
 	major2Carousel.owlCarousel({
     loop:true,
     autoplay: true,
@@ -266,7 +266,7 @@ AOS.init({
 	});
 
 
-  $('.centernonloop').owlCarousel({
+  jQuery('.centernonloop').owlCarousel({
     center: true,
     items: 1,
     loop: false,
@@ -279,11 +279,11 @@ AOS.init({
     }
   });
 
-  $('#date').datepicker({
+  jQuery('#date').datepicker({
     'format': 'm/d/yyyy',
     'autoclose': true
   });
-  $('#time').timepicker();
+  jQuery('#time').timepicker();
 
 
   //------- Google Map  js --------//  
