@@ -13,7 +13,12 @@
 				rn: $("#rn").val()
 
 			},function(data){
-				console.log(data);
+				if ('Successful'== data) {
+					alert('Your reservation request has been placed.');
+				}else if('Duplicate'== eata){
+					alert('You have already placed a request for this reservation. No need to submit again');
+
+				}
 			});
 			return false;
 		});

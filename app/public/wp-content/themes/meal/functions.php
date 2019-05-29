@@ -147,54 +147,7 @@ function get_recipe_category($recipe_id){
 
 
 
-/*
-1st time code write
 
-function meal_process_reservation() {
-
-	if (check_ajax_referer('reservation','rn' )) {
-		$name = sanitize_text_field($_POST['name']);
-		$email = sanitize_text_field($_POST['email']);
-		$phone = sanitize_text_field($_POST['phone']);
-		$persons = sanitize_text_field($_POST['persons']);
-		$date = sanitize_text_field($_POST['date']);
-		$time = sanitize_text_field($_POST['time']);
-		// $rn = sanitize_text_field($_POST['rn']);
-
-		$data = array(
-			'name' => $name,
-			'email' => $email,
-			'phone' => $phone,
-			'persons' => $persons,
-			'date' => $date,
-			'time' => $time,
-		);
-
-		print_r($data);
-
-		$reservation_arguments = array(
-			'post_type' => 'reservation',
-			'post_author' => 1,
-			'post_date' => date('Y-m-d H:i:s'),
-			'post_status' => 'publish',
-			'post_title' => sprintf('%s - Reservation for %s persons on %s - %s', $name,$persons,$date." : ".$time,$email),
-			'meta_input' => $data
-		);
-
-		$wp_error = '';
-
-		wp_insert_post( $reservation_arguments,$wp_error );
-		if (!$wp_error) {
-			echo "Successful";
-		}
-
-	}else {
-		echo 'Not allowed';
-	}
-	die();
-}
-add_action('wp_ajax_reservation','meal_process_reservation');
-add_action('wp_ajax_nopriv_reservation','meal_process_reservation');*/
 
 
 
@@ -224,6 +177,20 @@ function meal_process_reservation(){
 
 		);
 		print_r($data);
+
+		$reservation_arguments = array(
+			'post_type' => 'reservation',
+			'post_author' => 1,
+			'post_date' => date('Y-m-d H:i:s'),
+			'post_status' => 'publish',
+			'post_title' => sprintf('%s - Reservation for %s persons on %s - %s',$name,$persons,$date." : ".$time,$email),
+			'meta_input' => $data,
+		);
+		$wp_error = '';
+		wp_insert_post( $reservation_arguments, $wp_error );
+		if (!$wp_error) {
+			echo 'Successful';
+		}
 	}else {
 		echo 'Not allowed';
 	}
