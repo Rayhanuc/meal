@@ -148,14 +148,6 @@ function get_recipe_category($recipe_id){
 
 
 
-
-
-
-
-
-
-
-
 // 2nd time write ajax related code
 function meal_process_reservation(){
 
@@ -176,7 +168,6 @@ function meal_process_reservation(){
 			'time' => $time,
 
 		);
-		print_r($data);
 
 		$reservation_arguments = array(
 			'post_type' => 'reservation',
@@ -186,11 +177,36 @@ function meal_process_reservation(){
 			'post_title' => sprintf('%s - Reservation for %s persons on %s - %s',$name,$persons,$date." : ".$time,$email),
 			'meta_input' => $data,
 		);
-		$wp_error = '';
-		wp_insert_post( $reservation_arguments, $wp_error );
-		if (!$wp_error) {
-			echo 'Successful';
+
+		$reservations = new WP_Query(array(
+			'post_type' => 'reservation',
+			'post_status' => 'publish',
+			'meta_query' => array(
+				'relation' => 'AND',
+				'email_check' => array(
+					'key' => 'email',
+					'value' => $email					
+				),
+				'date_check' => array(
+					'key' => 'date',
+					'value' => $date					
+				),
+				'time_check' => array(
+					'key' => 'time',
+					'value' => $time					
+				)
+			)
+		));
+		if ($reservations->found_posts>0) {
+			echo "Duplicate";
+		}else {
+			$wp_error = '';
+			wp_insert_post( $reservation_arguments,$wp_error );
+			if (!$wp_error) {
+				echo "Successful";
+			}
 		}
+
 	}else {
 		echo 'Not allowed';
 	}
