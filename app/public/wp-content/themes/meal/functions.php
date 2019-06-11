@@ -92,11 +92,15 @@ function meal_assets(){
     // wp_enqueue_script("jquery.magnific-popup-options-js",get_theme_file_uri("/assets/js/magnific-popup-options.js"),array('jquery'),'1.3',true);
     wp_enqueue_script("bootstrap-datepicker-js",get_theme_file_uri("/assets/js/bootstrap-datepicker.js"),array('jquery'),'1.0',true);
     wp_enqueue_script("jquery-timepicker-js",get_theme_file_uri("/assets/js/jquery.timepicker.min.js"),array('jquery'),'1.0',true);
-    wp_enqueue_script("jquery-stellar-js",get_theme_file_uri("/assets/js/jquery.stellar.min.js"),array('jquery'),array('jquery'),'1.0',true);
+    wp_enqueue_script("jquery-stellar-js",get_theme_file_uri("/assets/js/jquery.stellar.min.js"),array('jquery'),'1.0',true);
     wp_enqueue_script("jquery-easing-js",get_theme_file_uri("/assets/js/jquery.easing.1.3.js"),array('jquery'),'1.3',true);
-    wp_enqueue_script("aos-js",get_theme_file_uri("/assets/js/aos.js"),array('jquery'),array('jquery'),'1.0',true);
+    wp_enqueue_script("aos-js",get_theme_file_uri("/assets/js/aos.js"),array('jquery'),'1.0',true);
 
-    wp_enqueue_script("isotope-js",'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js',array('jquery'));
+    // isotop internel file link
+    wp_enqueue_script("isotope-js",get_theme_file_uri("/assets/js/isotope-3.0.6.pkgd.min.js"),array('jquery'),'1.0',true);
+    /*isotop externel file link
+    wp_enqueue_script("isotope-js",'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js',array('jquery'));*/
+
     // Google map
     wp_enqueue_script("google-map-js",'//maps.googleapis.com/maps/api/js?key=AIzaSyDPUMolq8BwAX00VnlQQy2ko-D6JEOGIz0',null,'1.0',true);
     
@@ -175,7 +179,7 @@ function meal_process_reservation(){
 			'post_date' => date('Y-m-d H:i:s'),
 			'post_status' => 'publish',
 			'post_title' => sprintf('%s - Reservation for %s persons on %s - %s',$name,$persons,$date." : ".$time,$email),
-			'meta_input' => $data,
+			'meta_input' => $data
 		);
 
 		$reservations = new WP_Query(array(
@@ -198,12 +202,30 @@ function meal_process_reservation(){
 			)
 		));
 		if ($reservations->found_posts>0) {
-			echo "Duplicate";
+			echo 'Duplicate';
 		}else {
 			$wp_error = '';
-			wp_insert_post( $reservation_arguments,$wp_error );
+			$reservation_id = wp_insert_post( $reservation_arguments,$wp_error );
+
+
+
 			if (!$wp_error) {
-				echo "Successful";
+				$_name = explode(" ",$name);
+				$order_data = array(
+					'first_name' => $_name[0],
+					'last_name' => isset($_name[1])?$_name[1] : '',
+					'email' => $email,
+					'phone' => $phone,
+				);
+				$order = wc_create_order();
+				$order->set_address($order_data);
+				$order->add_product(wc_get_product(133),1);
+				$order->set_customer_note($reservation_id);
+				$order->calculate_totals();
+
+				add_post_meta($reservation_id, 'order_id', $order->get_id());
+
+				echo $order->get_checkout_payment_url();
 			}
 		}
 
@@ -217,17 +239,50 @@ add_action('wp_ajax_reservation','meal_process_reservation');
 add_action('wp_ajax_nopriv_reservation','meal_process_reservation');
 
 
+function meal_checkout_fields($fields){
+	// remove biling fields
+	unset($fields['billing']['billing_company']);
+	unset($fields['billing']['billing_address_1']);
+	unset($fields['billing']['billing_address_2']);
+	unset($fields['billing']['billing_city']);
+	unset($fields['billing']['billing_postcode']);
+	unset($fields['billing']['billing_country']);
+	unset($fields['billing']['billing_state']);
 
 
 
+	// remove Shipping fields
+	unset($fields['billing']['shipping_first_name']);
+	unset($fields['billing']['shipping_last_name']);
+	unset($fields['billing']['shipping_company']);
+	unset($fields['billing']['shipping_address_1']);
+	unset($fields['billing']['shipping_address_2']);
+	unset($fields['billing']['shipping_city']);
+	unset($fields['billing']['shipping_postcode']);
+	unset($fields['billing']['shipping_country']);
+	unset($fields['billing']['shipping_state']);
 
+	// remove order comment fields
+	unset($fields['billing']['order_comments']);
 
+	return $fields;
+}
+add_filter( 'woocommerce_checkout_fields', 'meal_checkout_fields' );
 
+function meal_order_status_processing($order_id){
+	$order = wc_get_order($order_id);
+	$reservation_id = $order->get_customer_note();
+	if ($reservation_id) {
+		$reservation = get_post($reservation_id);
+		wp_update_post(array(
+			'ID' => $reservation_id,
+			'post_title' => "[Paid] - ".$reservation->post_title
+		));
 
-
-
-
-
+		add_post_meta($reservation_id,'paid', 1);
+	}
+}
+add_filter( 'woocommerce_order_status_processing','meal_order_status_processing');
 
 
 

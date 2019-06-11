@@ -50,12 +50,13 @@ foreach ($meal_gallery_items as $meal_gallery_item) {
 <div class="container">
     <div class="row">
         <div class="col-md-12">
+
             <ul class="portfolio-filter">
                 <li data-filter="*" class="active"><?php _e( 'All','meal' ) ?></li>
+                
                 <?php
                 foreach ($meal_items_categories as $meal_items_category) :
                 ?>
-
                 <li data-filter=".<?php echo esc_attr($meal_items_category); ?>"><?php echo esc_html($meal_items_category); ?></li>
 
                 <?php

@@ -1,0 +1,1092 @@
+2019/06/07 10:20:29 Using in-memory storage
+2019/06/07 10:20:29 [SMTP] Binding to address: 0.0.0.0:1025
+2019/06/07 10:20:29 Serving under http://:1080/
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Starting session
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Received 16 bytes: 'EHLO localhost\r\n'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: ESTABLISH] In ESTABLISH state
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Sent 21 bytes: '250-Hello localhost\r\n'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Sent 16 bytes: '250-PIPELINING\r\n'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Received 35 bytes: 'MAIL FROM:<www-data@f207b5a26668>\r\n'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@f207b5a26668>
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@f207b5a26668>'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: MAIL] In MAIL state
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Sent 37 bytes: '250 Sender www-data@f207b5a26668 ok\r\n'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: RCPT] In RCPT state
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: RCPT] Got RCPT command
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Received 6 bytes: 'DATA\r\n'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: RCPT] Processing line: DATA
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: RCPT] In RCPT state
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: RCPT] Got DATA command, switching to DATA state
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Received 1024 bytes: 'To: dev-email@flywheel.local\r\nSubject: [meal] Your Site is Experiencing a Technical Issue\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Sun, 9 Jun 2019 12:17:37 +0000\r\nFrom: WordPress <wordpress@meal.local>\r\nMessage-ID: <663ef86eb3239c0d9133766a9880cd20@meal.local>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nHowdy!\r\n\r\nSince WordPress 5.2 there is a built-in feature that detects when a plugin or theme causes a fatal error on your site, and notifies you with this automated email.\r\n\r\nIn this case, WordPress caught an error with your theme, Meal.\r\n\r\nFirst, visit your website (http://meal.local/) and check for any visible issues. Next, visit the page where the error was caught (http://meal.local/wp-admin/post.php) and check for any visible issues.\r\n\r\nPlease contact your host for assistance with investigating this issue further.\r\n\r\nIf your site appears broken and you can't access your dashboard normally, WordPress n'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Received 593 bytes: 'ow has a special "recovery mode". This lets you safely login to your dashboard and investigate further.\r\n\r\nhttp://meal.local/wp-login.php?action=enter_recovery_mode&rm_token=30Z6CDV59G2LS8zJ3Du3vN&rm_key=d9JzVqdHeLXeYT6BJTJFu5\r\n\r\nTo keep your site safe, this link will expire in 1 day. Don't worry about that, though: a new link will be emailed to you if the error occurs again after it expires.\r\n\r\n\r\n\r\nError Details\r\n=============\r\nAn error of type E_PARSE was caused in line 279 of the file /app/public/wp-content/themes/meal/functions.php. Error message: syntax error, unexpected '}'\r\n\r\n.\r\n'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2019/06/09 12:17:37 Parsing Content from string: 'To: dev-email@flywheel.local
+Subject: [meal] Your Site is Experiencing a Technical Issue
+X-PHP-Originating-Script: 1000:class-phpmailer.php
+Date: Sun, 9 Jun 2019 12:17:37 +0000
+From: WordPress <wordpress@meal.local>
+Message-ID: <663ef86eb3239c0d9133766a9880cd20@meal.local>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Howdy!
+
+Since WordPress 5.2 there is a built-in feature that detects when a plugin or theme causes a fatal error on your site, and notifies you with this automated email.
+
+In this case, WordPress caught an error with your theme, Meal.
+
+First, visit your website (http://meal.local/) and check for any visible issues. Next, visit the page where the error was caught (http://meal.local/wp-admin/post.php) and check for any visible issues.
+
+Please contact your host for assistance with investigating this issue further.
+
+If your site appears broken and you can't access your dashboard normally, WordPress now has a special "recovery mode". This lets you safely login to your dashboard and investigate further.
+
+http://meal.local/wp-login.php?action=enter_recovery_mode&rm_token=30Z6CDV59G2LS8zJ3Du3vN&rm_key=d9JzVqdHeLXeYT6BJTJFu5
+
+To keep your site safe, this link will expire in 1 day. Don't worry about that, though: a new link will be emailed to you if the error occurs again after it expires.
+
+
+
+Error Details
+=============
+An error of type E_PARSE was caused in line 279 of the file /app/public/wp-content/themes/meal/functions.php. Error message: syntax error, unexpected '}'
+'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Storing message 0-bOti6WBKpQlf0u6ENasjsawL0Iu5yThLCIzF--qpI=@mailhog.example
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Sent 80 bytes: '250 Ok: queued as 0-bOti6WBKpQlf0u6ENasjsawL0Iu5yThLCIzF--qpI=@mailhog.example\r\n'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Received 6 bytes: 'QUIT\r\n'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: MAIL] Processing line: QUIT
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Sent 9 bytes: '221 Bye\r\n'
+2019/06/09 12:17:37 [SMTP 127.0.0.1:50964] Session ended
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Starting session
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Received 16 bytes: 'EHLO localhost\r\n'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: ESTABLISH] In ESTABLISH state
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Sent 21 bytes: '250-Hello localhost\r\n'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Sent 16 bytes: '250-PIPELINING\r\n'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Received 35 bytes: 'MAIL FROM:<www-data@f207b5a26668>\r\n'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@f207b5a26668>
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@f207b5a26668>'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: MAIL] In MAIL state
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Sent 37 bytes: '250 Sender www-data@f207b5a26668 ok\r\n'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: RCPT] In RCPT state
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: RCPT] Got RCPT command
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Received 6 bytes: 'DATA\r\n'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: RCPT] Processing line: DATA
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: RCPT] In RCPT state
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: RCPT] Got DATA command, switching to DATA state
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Received 1024 bytes: 'To: dev-email@flywheel.local\r\nSubject: [meal]: New order #139\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Sun, 9 Jun 2019 12:18:04 +0000\r\nFrom: meal <dev-email@flywheel.local>\r\nReply-To: John Doe <John@doe.com>\r\nMessage-ID: <2cf6c21fe26593966f7ddc4247dd6604@meal.local>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Transfer-Encoding: 8bit\r\n\r\n<!DOCTYPE html>\r\n<html lang="en-US">\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">\r\n<title>meal</title>\r\n</head>\r\n<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="padding: 0;">\r\n		<div id="wrapper" dir="ltr" style="background-color: #f7f7f7; margin: 0; padding: 70px 0; width: 100%; -webkit-text-size-adjust: none;">\r\n			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%"><tr>\r\n<td align="center" valign="top">\r\n						<div id="template_header_image">\r\n													</div>\r\n						<t'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Received 1024 bytes: 'able border="0" cellpadding="0" cellspacing="0" width="600" id="template_container" style="background-color: #ffffff; border: 1px solid #dedede; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); border-radius: 3px;">\r\n<tr>\r\n<td align="center" valign="top">\r\n									<!-- Header -->\r\n									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header" style='background-color: #96588a; color: #ffffff; border-bottom: 0; font-weight: bold; line-height: 100%; vertical-align: middle; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; border-radius: 3px 3px 0 0;'><tr>\r\n<td id="header_wrapper" style="padding: 36px 48px; display: block;">\r\n												<h1 style='font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 30px; font-weight: 300; line-height: 150%; margin: 0; text-align: left; text-shadow: 0 1px 0 #ab79a1; color: #ffffff;'>New Order: #139</h1>\r\n											</td>\r\n										</tr></table>\r\n<!-- End Header -->\r\n</td>\r\n							</tr>\r\n<tr>\r\n<td align="center'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Received 1024 bytes: '" valign="top">\r\n									<!-- Body -->\r\n									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_body"><tr>\r\n<td valign="top" id="body_content" style="background-color: #ffffff;">\r\n												<!-- Content -->\r\n												<table border="0" cellpadding="20" cellspacing="0" width="100%"><tr>\r\n<td valign="top" style="padding: 48px 48px 0;">\r\n															<div id="body_content_inner" style='color: #636363; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 14px; line-height: 150%; text-align: left;'>\r\n\r\n<p style="margin: 0 0 16px;">You’ve received the following order from John Doe:</p>\r\n<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>\r\n	<a class="link" href="http://meal.local/wp-admin/post.php?post=139&amp;action=edit" style="font-weight: normal; text-decoration: underline; color: #96588a;">[Order #'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Received 1024 bytes: '139]</a> (June 9, 2019)</h2>\r\n\r\n<div style="margin-bottom: 40px;">\r\n	<table class="td" cellspacing="0" cellpadding="6" border="1" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n<thead><tr>\r\n<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Product</th>\r\n				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Quantity</th>\r\n				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Price</th>\r\n			</tr></thead>\r\n<tbody><tr class="order_item">\r\n<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; word-wrap: break-word;">\r\n	'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Received 1024 bytes: '	Reservation Confirmation		</td>\r\n		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n			1		</td>\r\n		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n			<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span>		</td>\r\n	</tr></tbody>\r\n<tfoot>\r\n<tr>\r\n<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;">Subtotal:</th>\r\n						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySym'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Received 1024 bytes: 'bol">৳ </span>5.00</span></td>\r\n					</tr>\r\n<tr>\r\n<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Total:</th>\r\n						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>\r\n					</tr>\r\n<tr>\r\n<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Note:</th>\r\n					<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">138</td>\r\n				</tr>\r\n</tfoot>\r\n</table>\r\n</div>\r\n\r\n<table id="addresses" cellspacing="0" cellpadding="0" border="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding: 0;"><tr>\r\n<td valign="top" width="50%" style="text-align: left; fon'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Received 1024 bytes: 't-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; border: 0; padding: 0;">\r\n			<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>Billing address</h2>\r\n\r\n			<address class="address" style="padding: 12px; color: #636363; border: 1px solid #e5e5e5;">\r\n				John Doe									<br>1122334455													<br>John@doe.com							</address>\r\n		</td>\r\n			</tr></table>\r\n</div>\r\n														</td>\r\n													</tr></table>\r\n<!-- End Content -->\r\n</td>\r\n										</tr></table>\r\n<!-- End Body -->\r\n</td>\r\n							</tr>\r\n<tr>\r\n<td align="center" valign="top">\r\n									<!-- Footer -->\r\n									<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer"><tr>\r\n<td valign="top" style="padding: 0; border-radius: 6px;">\r\n												<table border="0" cellpadding="10" cellspacing="0" width="100%"><tr>\r\n<td colspan="2" valign="middle" id="cr'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Received 572 bytes: 'edit" style='border-radius: 6px; border: 0; color: #c09bb9; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 125%; text-align: center; padding: 0 48px 48px 48px;'>\r\n															<p>meal<br>Built with <a href="https://woocommerce.com/" style="color: #96588a; font-weight: normal; text-decoration: underline;">WooCommerce</a></p>\r\n														</td>\r\n													</tr></table>\r\n</td>\r\n										</tr></table>\r\n<!-- End Footer -->\r\n</td>\r\n							</tr>\r\n</table>\r\n</td>\r\n				</tr></table>\r\n</div>\r\n	</body>\r\n</html>\r\n\r\n.\r\n'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2019/06/09 12:18:04 Parsing Content from string: 'To: dev-email@flywheel.local
+Subject: [meal]: New order #139
+X-PHP-Originating-Script: 1000:class-phpmailer.php
+Date: Sun, 9 Jun 2019 12:18:04 +0000
+From: meal <dev-email@flywheel.local>
+Reply-To: John Doe <John@doe.com>
+Message-ID: <2cf6c21fe26593966f7ddc4247dd6604@meal.local>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>meal</title>
+</head>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="padding: 0;">
+		<div id="wrapper" dir="ltr" style="background-color: #f7f7f7; margin: 0; padding: 70px 0; width: 100%; -webkit-text-size-adjust: none;">
+			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%"><tr>
+<td align="center" valign="top">
+						<div id="template_header_image">
+													</div>
+						<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_container" style="background-color: #ffffff; border: 1px solid #dedede; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); border-radius: 3px;">
+<tr>
+<td align="center" valign="top">
+									<!-- Header -->
+									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header" style='background-color: #96588a; color: #ffffff; border-bottom: 0; font-weight: bold; line-height: 100%; vertical-align: middle; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; border-radius: 3px 3px 0 0;'><tr>
+<td id="header_wrapper" style="padding: 36px 48px; display: block;">
+												<h1 style='font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 30px; font-weight: 300; line-height: 150%; margin: 0; text-align: left; text-shadow: 0 1px 0 #ab79a1; color: #ffffff;'>New Order: #139</h1>
+											</td>
+										</tr></table>
+<!-- End Header -->
+</td>
+							</tr>
+<tr>
+<td align="center" valign="top">
+									<!-- Body -->
+									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_body"><tr>
+<td valign="top" id="body_content" style="background-color: #ffffff;">
+												<!-- Content -->
+												<table border="0" cellpadding="20" cellspacing="0" width="100%"><tr>
+<td valign="top" style="padding: 48px 48px 0;">
+															<div id="body_content_inner" style='color: #636363; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 14px; line-height: 150%; text-align: left;'>
+
+<p style="margin: 0 0 16px;">You’ve received the following order from John Doe:</p>
+<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>
+	<a class="link" href="http://meal.local/wp-admin/post.php?post=139&amp;action=edit" style="font-weight: normal; text-decoration: underline; color: #96588a;">[Order #139]</a> (June 9, 2019)</h2>
+
+<div style="margin-bottom: 40px;">
+	<table class="td" cellspacing="0" cellpadding="6" border="1" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+<thead><tr>
+<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Product</th>
+				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Quantity</th>
+				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Price</th>
+			</tr></thead>
+<tbody><tr class="order_item">
+<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; word-wrap: break-word;">
+		Reservation Confirmation		</td>
+		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+			1		</td>
+		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+			<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span>		</td>
+	</tr></tbody>
+<tfoot>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;">Subtotal:</th>
+						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>
+					</tr>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Total:</th>
+						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>
+					</tr>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Note:</th>
+					<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">138</td>
+				</tr>
+</tfoot>
+</table>
+</div>
+
+<table id="addresses" cellspacing="0" cellpadding="0" border="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding: 0;"><tr>
+<td valign="top" width="50%" style="text-align: left; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; border: 0; padding: 0;">
+			<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>Billing address</h2>
+
+			<address class="address" style="padding: 12px; color: #636363; border: 1px solid #e5e5e5;">
+				John Doe									<br>1122334455													<br>John@doe.com							</address>
+		</td>
+			</tr></table>
+</div>
+														</td>
+													</tr></table>
+<!-- End Content -->
+</td>
+										</tr></table>
+<!-- End Body -->
+</td>
+							</tr>
+<tr>
+<td align="center" valign="top">
+									<!-- Footer -->
+									<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer"><tr>
+<td valign="top" style="padding: 0; border-radius: 6px;">
+												<table border="0" cellpadding="10" cellspacing="0" width="100%"><tr>
+<td colspan="2" valign="middle" id="credit" style='border-radius: 6px; border: 0; color: #c09bb9; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 125%; text-align: center; padding: 0 48px 48px 48px;'>
+															<p>meal<br>Built with <a href="https://woocommerce.com/" style="color: #96588a; font-weight: normal; text-decoration: underline;">WooCommerce</a></p>
+														</td>
+													</tr></table>
+</td>
+										</tr></table>
+<!-- End Footer -->
+</td>
+							</tr>
+</table>
+</td>
+				</tr></table>
+</div>
+	</body>
+</html>
+'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Storing message 1twl5chH80wXeMrt1VbtAzk7fE0YbtVJaRNNbUywbzg=@mailhog.example
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Sent 80 bytes: '250 Ok: queued as 1twl5chH80wXeMrt1VbtAzk7fE0YbtVJaRNNbUywbzg=@mailhog.example\r\n'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Received 6 bytes: 'QUIT\r\n'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: MAIL] Processing line: QUIT
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Sent 9 bytes: '221 Bye\r\n'
+2019/06/09 12:18:04 [SMTP 127.0.0.1:50984] Session ended
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Starting session
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Received 16 bytes: 'EHLO localhost\r\n'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: ESTABLISH] In ESTABLISH state
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Sent 21 bytes: '250-Hello localhost\r\n'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Sent 16 bytes: '250-PIPELINING\r\n'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Received 35 bytes: 'MAIL FROM:<www-data@f207b5a26668>\r\n'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@f207b5a26668>
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@f207b5a26668>'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: MAIL] In MAIL state
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Sent 37 bytes: '250 Sender www-data@f207b5a26668 ok\r\n'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: RCPT] In RCPT state
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: RCPT] Got RCPT command
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Received 6 bytes: 'DATA\r\n'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: RCPT] Processing line: DATA
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: RCPT] In RCPT state
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: RCPT] Got DATA command, switching to DATA state
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Received 1024 bytes: 'To: John@doe.com\r\nSubject: Your meal order has been received!\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Sun, 9 Jun 2019 12:18:04 +0000\r\nFrom: meal <dev-email@flywheel.local>\r\nReply-To: meal <dev-email@flywheel.local>\r\nMessage-ID: <3b133fc4457f6520b2678d18d60ff2d7@meal.local>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Transfer-Encoding: 8bit\r\n\r\n<!DOCTYPE html>\r\n<html lang="en-US">\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">\r\n<title>meal</title>\r\n</head>\r\n<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="padding: 0;">\r\n		<div id="wrapper" dir="ltr" style="background-color: #f7f7f7; margin: 0; padding: 70px 0; width: 100%; -webkit-text-size-adjust: none;">\r\n			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%"><tr>\r\n<td align="center" valign="top">\r\n						<div id="template_header_image">\r\n													</div>\r\n'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Received 1024 bytes: '						<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_container" style="background-color: #ffffff; border: 1px solid #dedede; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); border-radius: 3px;">\r\n<tr>\r\n<td align="center" valign="top">\r\n									<!-- Header -->\r\n									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header" style='background-color: #96588a; color: #ffffff; border-bottom: 0; font-weight: bold; line-height: 100%; vertical-align: middle; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; border-radius: 3px 3px 0 0;'><tr>\r\n<td id="header_wrapper" style="padding: 36px 48px; display: block;">\r\n												<h1 style='font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 30px; font-weight: 300; line-height: 150%; margin: 0; text-align: left; text-shadow: 0 1px 0 #ab79a1; color: #ffffff;'>Thank you for your order</h1>\r\n											</td>\r\n										</tr></table>\r\n<!-- End Header -->\r\n</td>\r\n							</tr>\r\n<tr>\r\n'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Received 1024 bytes: '<td align="center" valign="top">\r\n									<!-- Body -->\r\n									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_body"><tr>\r\n<td valign="top" id="body_content" style="background-color: #ffffff;">\r\n												<!-- Content -->\r\n												<table border="0" cellpadding="20" cellspacing="0" width="100%"><tr>\r\n<td valign="top" style="padding: 48px 48px 0;">\r\n															<div id="body_content_inner" style='color: #636363; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 14px; line-height: 150%; text-align: left;'>\r\n\r\n<p style="margin: 0 0 16px;">Hi John,</p>\r\n<p style="margin: 0 0 16px;">Just to let you know — we've received your order #139, and it is now being processed:</p>\r\n\r\n\r\n<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>\r\n	[Order #139] (June 9, 2019)</h2>\r\n\r\n<div style="margin-bottom: 40p'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Received 1024 bytes: 'x;">\r\n	<table class="td" cellspacing="0" cellpadding="6" border="1" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n<thead><tr>\r\n<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Product</th>\r\n				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Quantity</th>\r\n				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Price</th>\r\n			</tr></thead>\r\n<tbody><tr class="order_item">\r\n<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; word-wrap: break-word;">\r\n		Reservation Confirmation		</td>\r\n		<td class="td" style="colo'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Received 1024 bytes: 'r: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n			1		</td>\r\n		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n			<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span>		</td>\r\n	</tr></tbody>\r\n<tfoot>\r\n<tr>\r\n<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;">Subtotal:</th>\r\n						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>\r\n					</tr>\r\n<tr>\r\n<th class'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Received 1024 bytes: '="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Total:</th>\r\n						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>\r\n					</tr>\r\n<tr>\r\n<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Note:</th>\r\n					<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">138</td>\r\n				</tr>\r\n</tfoot>\r\n</table>\r\n</div>\r\n\r\n<table id="addresses" cellspacing="0" cellpadding="0" border="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding: 0;"><tr>\r\n<td valign="top" width="50%" style="text-align: left; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-ser'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Received 1024 bytes: 'if; border: 0; padding: 0;">\r\n			<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>Billing address</h2>\r\n\r\n			<address class="address" style="padding: 12px; color: #636363; border: 1px solid #e5e5e5;">\r\n				John Doe									<br>1122334455													<br>John@doe.com							</address>\r\n		</td>\r\n			</tr></table>\r\n<p style="margin: 0 0 16px;">\r\nThanks!</p>\r\n															</div>\r\n														</td>\r\n													</tr></table>\r\n<!-- End Content -->\r\n</td>\r\n										</tr></table>\r\n<!-- End Body -->\r\n</td>\r\n							</tr>\r\n<tr>\r\n<td align="center" valign="top">\r\n									<!-- Footer -->\r\n									<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer"><tr>\r\n<td valign="top" style="padding: 0; border-radius: 6px;">\r\n												<table border="0" cellpadding="10" cellspacing="0" width="100%"><tr>\r\n<td colspan="2" valign="middle" id="credi'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Received 569 bytes: 't" style='border-radius: 6px; border: 0; color: #c09bb9; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 125%; text-align: center; padding: 0 48px 48px 48px;'>\r\n															<p>meal<br>Built with <a href="https://woocommerce.com/" style="color: #96588a; font-weight: normal; text-decoration: underline;">WooCommerce</a></p>\r\n														</td>\r\n													</tr></table>\r\n</td>\r\n										</tr></table>\r\n<!-- End Footer -->\r\n</td>\r\n							</tr>\r\n</table>\r\n</td>\r\n				</tr></table>\r\n</div>\r\n	</body>\r\n</html>\r\n\r\n.\r\n'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2019/06/09 12:18:05 Parsing Content from string: 'To: John@doe.com
+Subject: Your meal order has been received!
+X-PHP-Originating-Script: 1000:class-phpmailer.php
+Date: Sun, 9 Jun 2019 12:18:04 +0000
+From: meal <dev-email@flywheel.local>
+Reply-To: meal <dev-email@flywheel.local>
+Message-ID: <3b133fc4457f6520b2678d18d60ff2d7@meal.local>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>meal</title>
+</head>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="padding: 0;">
+		<div id="wrapper" dir="ltr" style="background-color: #f7f7f7; margin: 0; padding: 70px 0; width: 100%; -webkit-text-size-adjust: none;">
+			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%"><tr>
+<td align="center" valign="top">
+						<div id="template_header_image">
+													</div>
+						<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_container" style="background-color: #ffffff; border: 1px solid #dedede; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); border-radius: 3px;">
+<tr>
+<td align="center" valign="top">
+									<!-- Header -->
+									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header" style='background-color: #96588a; color: #ffffff; border-bottom: 0; font-weight: bold; line-height: 100%; vertical-align: middle; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; border-radius: 3px 3px 0 0;'><tr>
+<td id="header_wrapper" style="padding: 36px 48px; display: block;">
+												<h1 style='font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 30px; font-weight: 300; line-height: 150%; margin: 0; text-align: left; text-shadow: 0 1px 0 #ab79a1; color: #ffffff;'>Thank you for your order</h1>
+											</td>
+										</tr></table>
+<!-- End Header -->
+</td>
+							</tr>
+<tr>
+<td align="center" valign="top">
+									<!-- Body -->
+									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_body"><tr>
+<td valign="top" id="body_content" style="background-color: #ffffff;">
+												<!-- Content -->
+												<table border="0" cellpadding="20" cellspacing="0" width="100%"><tr>
+<td valign="top" style="padding: 48px 48px 0;">
+															<div id="body_content_inner" style='color: #636363; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 14px; line-height: 150%; text-align: left;'>
+
+<p style="margin: 0 0 16px;">Hi John,</p>
+<p style="margin: 0 0 16px;">Just to let you know — we've received your order #139, and it is now being processed:</p>
+
+
+<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>
+	[Order #139] (June 9, 2019)</h2>
+
+<div style="margin-bottom: 40px;">
+	<table class="td" cellspacing="0" cellpadding="6" border="1" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+<thead><tr>
+<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Product</th>
+				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Quantity</th>
+				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Price</th>
+			</tr></thead>
+<tbody><tr class="order_item">
+<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; word-wrap: break-word;">
+		Reservation Confirmation		</td>
+		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+			1		</td>
+		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+			<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span>		</td>
+	</tr></tbody>
+<tfoot>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;">Subtotal:</th>
+						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>
+					</tr>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Total:</th>
+						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>
+					</tr>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Note:</th>
+					<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">138</td>
+				</tr>
+</tfoot>
+</table>
+</div>
+
+<table id="addresses" cellspacing="0" cellpadding="0" border="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding: 0;"><tr>
+<td valign="top" width="50%" style="text-align: left; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; border: 0; padding: 0;">
+			<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>Billing address</h2>
+
+			<address class="address" style="padding: 12px; color: #636363; border: 1px solid #e5e5e5;">
+				John Doe									<br>1122334455													<br>John@doe.com							</address>
+		</td>
+			</tr></table>
+<p style="margin: 0 0 16px;">
+Thanks!</p>
+															</div>
+														</td>
+													</tr></table>
+<!-- End Content -->
+</td>
+										</tr></table>
+<!-- End Body -->
+</td>
+							</tr>
+<tr>
+<td align="center" valign="top">
+									<!-- Footer -->
+									<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer"><tr>
+<td valign="top" style="padding: 0; border-radius: 6px;">
+												<table border="0" cellpadding="10" cellspacing="0" width="100%"><tr>
+<td colspan="2" valign="middle" id="credit" style='border-radius: 6px; border: 0; color: #c09bb9; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 125%; text-align: center; padding: 0 48px 48px 48px;'>
+															<p>meal<br>Built with <a href="https://woocommerce.com/" style="color: #96588a; font-weight: normal; text-decoration: underline;">WooCommerce</a></p>
+														</td>
+													</tr></table>
+</td>
+										</tr></table>
+<!-- End Footer -->
+</td>
+							</tr>
+</table>
+</td>
+				</tr></table>
+</div>
+	</body>
+</html>
+'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Storing message YDi1FnPYMAKJ_KCWIfn6OrAz6CL3u4WTyIJ8_OV7BC4=@mailhog.example
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Sent 80 bytes: '250 Ok: queued as YDi1FnPYMAKJ_KCWIfn6OrAz6CL3u4WTyIJ8_OV7BC4=@mailhog.example\r\n'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Received 6 bytes: 'QUIT\r\n'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: MAIL] Processing line: QUIT
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Sent 9 bytes: '221 Bye\r\n'
+2019/06/09 12:18:05 [SMTP 127.0.0.1:50986] Session ended
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Starting session
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Received 16 bytes: 'EHLO localhost\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: ESTABLISH] In ESTABLISH state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Sent 21 bytes: '250-Hello localhost\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Sent 16 bytes: '250-PIPELINING\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Received 35 bytes: 'MAIL FROM:<www-data@f207b5a26668>\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@f207b5a26668>
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@f207b5a26668>'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: MAIL] In MAIL state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Sent 37 bytes: '250 Sender www-data@f207b5a26668 ok\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: RCPT] In RCPT state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: RCPT] Got RCPT command
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Received 6 bytes: 'DATA\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: RCPT] Processing line: DATA
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: RCPT] In RCPT state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: RCPT] Got DATA command, switching to DATA state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Received 1024 bytes: 'To: dev-email@flywheel.local\r\nSubject: [meal]: New order #141\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Sun, 9 Jun 2019 16:14:15 +0000\r\nFrom: meal <dev-email@flywheel.local>\r\nReply-To: John Doe <John@doe.com>\r\nMessage-ID: <534549345ee97d423d9d9e21f69934de@meal.local>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Transfer-Encoding: 8bit\r\n\r\n<!DOCTYPE html>\r\n<html lang="en-US">\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">\r\n<title>meal</title>\r\n</head>\r\n<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="padding: 0;">\r\n		<div id="wrapper" dir="ltr" style="background-color: #f7f7f7; margin: 0; padding: 70px 0; width: 100%; -webkit-text-size-adjust: none;">\r\n			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%"><tr>\r\n<td align="center" valign="top">\r\n						<div id="template_header_image">\r\n													</div>\r\n						<t'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Received 1024 bytes: 'able border="0" cellpadding="0" cellspacing="0" width="600" id="template_container" style="background-color: #ffffff; border: 1px solid #dedede; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); border-radius: 3px;">\r\n<tr>\r\n<td align="center" valign="top">\r\n									<!-- Header -->\r\n									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header" style='background-color: #96588a; color: #ffffff; border-bottom: 0; font-weight: bold; line-height: 100%; vertical-align: middle; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; border-radius: 3px 3px 0 0;'><tr>\r\n<td id="header_wrapper" style="padding: 36px 48px; display: block;">\r\n												<h1 style='font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 30px; font-weight: 300; line-height: 150%; margin: 0; text-align: left; text-shadow: 0 1px 0 #ab79a1; color: #ffffff;'>New Order: #141</h1>\r\n											</td>\r\n										</tr></table>\r\n<!-- End Header -->\r\n</td>\r\n							</tr>\r\n<tr>\r\n<td align="center'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Received 1024 bytes: '" valign="top">\r\n									<!-- Body -->\r\n									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_body"><tr>\r\n<td valign="top" id="body_content" style="background-color: #ffffff;">\r\n												<!-- Content -->\r\n												<table border="0" cellpadding="20" cellspacing="0" width="100%"><tr>\r\n<td valign="top" style="padding: 48px 48px 0;">\r\n															<div id="body_content_inner" style='color: #636363; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 14px; line-height: 150%; text-align: left;'>\r\n\r\n<p style="margin: 0 0 16px;">You’ve received the following order from John Doe:</p>\r\n<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>\r\n	<a class="link" href="http://meal.local/wp-admin/post.php?post=141&amp;action=edit" style="font-weight: normal; text-decoration: underline; color: #96588a;">[Order #'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Received 1024 bytes: '141]</a> (June 9, 2019)</h2>\r\n\r\n<div style="margin-bottom: 40px;">\r\n	<table class="td" cellspacing="0" cellpadding="6" border="1" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n<thead><tr>\r\n<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Product</th>\r\n				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Quantity</th>\r\n				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Price</th>\r\n			</tr></thead>\r\n<tbody><tr class="order_item">\r\n<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; word-wrap: break-word;">\r\n	'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Received 1024 bytes: '	Reservation Confirmation		</td>\r\n		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n			1		</td>\r\n		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n			<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span>		</td>\r\n	</tr></tbody>\r\n<tfoot>\r\n<tr>\r\n<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;">Subtotal:</th>\r\n						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySym'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Received 1024 bytes: 'bol">৳ </span>5.00</span></td>\r\n					</tr>\r\n<tr>\r\n<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Total:</th>\r\n						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>\r\n					</tr>\r\n<tr>\r\n<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Note:</th>\r\n					<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">140</td>\r\n				</tr>\r\n</tfoot>\r\n</table>\r\n</div>\r\n\r\n<table id="addresses" cellspacing="0" cellpadding="0" border="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding: 0;"><tr>\r\n<td valign="top" width="50%" style="text-align: left; fon'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Received 1024 bytes: 't-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; border: 0; padding: 0;">\r\n			<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>Billing address</h2>\r\n\r\n			<address class="address" style="padding: 12px; color: #636363; border: 1px solid #e5e5e5;">\r\n				John Doe									<br>55669988													<br>John@doe.com							</address>\r\n		</td>\r\n			</tr></table>\r\n</div>\r\n														</td>\r\n													</tr></table>\r\n<!-- End Content -->\r\n</td>\r\n										</tr></table>\r\n<!-- End Body -->\r\n</td>\r\n							</tr>\r\n<tr>\r\n<td align="center" valign="top">\r\n									<!-- Footer -->\r\n									<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer"><tr>\r\n<td valign="top" style="padding: 0; border-radius: 6px;">\r\n												<table border="0" cellpadding="10" cellspacing="0" width="100%"><tr>\r\n<td colspan="2" valign="middle" id="cred'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Received 570 bytes: 'it" style='border-radius: 6px; border: 0; color: #c09bb9; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 125%; text-align: center; padding: 0 48px 48px 48px;'>\r\n															<p>meal<br>Built with <a href="https://woocommerce.com/" style="color: #96588a; font-weight: normal; text-decoration: underline;">WooCommerce</a></p>\r\n														</td>\r\n													</tr></table>\r\n</td>\r\n										</tr></table>\r\n<!-- End Footer -->\r\n</td>\r\n							</tr>\r\n</table>\r\n</td>\r\n				</tr></table>\r\n</div>\r\n	</body>\r\n</html>\r\n\r\n.\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2019/06/09 16:14:15 Parsing Content from string: 'To: dev-email@flywheel.local
+Subject: [meal]: New order #141
+X-PHP-Originating-Script: 1000:class-phpmailer.php
+Date: Sun, 9 Jun 2019 16:14:15 +0000
+From: meal <dev-email@flywheel.local>
+Reply-To: John Doe <John@doe.com>
+Message-ID: <534549345ee97d423d9d9e21f69934de@meal.local>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>meal</title>
+</head>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="padding: 0;">
+		<div id="wrapper" dir="ltr" style="background-color: #f7f7f7; margin: 0; padding: 70px 0; width: 100%; -webkit-text-size-adjust: none;">
+			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%"><tr>
+<td align="center" valign="top">
+						<div id="template_header_image">
+													</div>
+						<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_container" style="background-color: #ffffff; border: 1px solid #dedede; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); border-radius: 3px;">
+<tr>
+<td align="center" valign="top">
+									<!-- Header -->
+									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header" style='background-color: #96588a; color: #ffffff; border-bottom: 0; font-weight: bold; line-height: 100%; vertical-align: middle; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; border-radius: 3px 3px 0 0;'><tr>
+<td id="header_wrapper" style="padding: 36px 48px; display: block;">
+												<h1 style='font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 30px; font-weight: 300; line-height: 150%; margin: 0; text-align: left; text-shadow: 0 1px 0 #ab79a1; color: #ffffff;'>New Order: #141</h1>
+											</td>
+										</tr></table>
+<!-- End Header -->
+</td>
+							</tr>
+<tr>
+<td align="center" valign="top">
+									<!-- Body -->
+									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_body"><tr>
+<td valign="top" id="body_content" style="background-color: #ffffff;">
+												<!-- Content -->
+												<table border="0" cellpadding="20" cellspacing="0" width="100%"><tr>
+<td valign="top" style="padding: 48px 48px 0;">
+															<div id="body_content_inner" style='color: #636363; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 14px; line-height: 150%; text-align: left;'>
+
+<p style="margin: 0 0 16px;">You’ve received the following order from John Doe:</p>
+<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>
+	<a class="link" href="http://meal.local/wp-admin/post.php?post=141&amp;action=edit" style="font-weight: normal; text-decoration: underline; color: #96588a;">[Order #141]</a> (June 9, 2019)</h2>
+
+<div style="margin-bottom: 40px;">
+	<table class="td" cellspacing="0" cellpadding="6" border="1" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+<thead><tr>
+<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Product</th>
+				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Quantity</th>
+				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Price</th>
+			</tr></thead>
+<tbody><tr class="order_item">
+<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; word-wrap: break-word;">
+		Reservation Confirmation		</td>
+		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+			1		</td>
+		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+			<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span>		</td>
+	</tr></tbody>
+<tfoot>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;">Subtotal:</th>
+						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>
+					</tr>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Total:</th>
+						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>
+					</tr>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Note:</th>
+					<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">140</td>
+				</tr>
+</tfoot>
+</table>
+</div>
+
+<table id="addresses" cellspacing="0" cellpadding="0" border="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding: 0;"><tr>
+<td valign="top" width="50%" style="text-align: left; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; border: 0; padding: 0;">
+			<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>Billing address</h2>
+
+			<address class="address" style="padding: 12px; color: #636363; border: 1px solid #e5e5e5;">
+				John Doe									<br>55669988													<br>John@doe.com							</address>
+		</td>
+			</tr></table>
+</div>
+														</td>
+													</tr></table>
+<!-- End Content -->
+</td>
+										</tr></table>
+<!-- End Body -->
+</td>
+							</tr>
+<tr>
+<td align="center" valign="top">
+									<!-- Footer -->
+									<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer"><tr>
+<td valign="top" style="padding: 0; border-radius: 6px;">
+												<table border="0" cellpadding="10" cellspacing="0" width="100%"><tr>
+<td colspan="2" valign="middle" id="credit" style='border-radius: 6px; border: 0; color: #c09bb9; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 125%; text-align: center; padding: 0 48px 48px 48px;'>
+															<p>meal<br>Built with <a href="https://woocommerce.com/" style="color: #96588a; font-weight: normal; text-decoration: underline;">WooCommerce</a></p>
+														</td>
+													</tr></table>
+</td>
+										</tr></table>
+<!-- End Footer -->
+</td>
+							</tr>
+</table>
+</td>
+				</tr></table>
+</div>
+	</body>
+</html>
+'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Storing message 0Cz7HReoiwP-hJvPKgTehSUqs65IRq8EJNswIO3_t6A=@mailhog.example
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Sent 80 bytes: '250 Ok: queued as 0Cz7HReoiwP-hJvPKgTehSUqs65IRq8EJNswIO3_t6A=@mailhog.example\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Received 6 bytes: 'QUIT\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: MAIL] Processing line: QUIT
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Sent 9 bytes: '221 Bye\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46934] Session ended
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Starting session
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Received 16 bytes: 'EHLO localhost\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: ESTABLISH] In ESTABLISH state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Sent 21 bytes: '250-Hello localhost\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Sent 16 bytes: '250-PIPELINING\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Received 35 bytes: 'MAIL FROM:<www-data@f207b5a26668>\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@f207b5a26668>
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@f207b5a26668>'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: MAIL] In MAIL state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Sent 37 bytes: '250 Sender www-data@f207b5a26668 ok\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: RCPT] In RCPT state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: RCPT] Got RCPT command
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Received 6 bytes: 'DATA\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: RCPT] Processing line: DATA
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: RCPT] In RCPT state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: RCPT] Got DATA command, switching to DATA state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Received 1024 bytes: 'To: John@doe.com\r\nSubject: Your meal order has been received!\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Sun, 9 Jun 2019 16:14:15 +0000\r\nFrom: meal <dev-email@flywheel.local>\r\nReply-To: meal <dev-email@flywheel.local>\r\nMessage-ID: <8876c92db326e584242f47f8b7bb0a70@meal.local>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Transfer-Encoding: 8bit\r\n\r\n<!DOCTYPE html>\r\n<html lang="en-US">\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">\r\n<title>meal</title>\r\n</head>\r\n<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="padding: 0;">\r\n		<div id="wrapper" dir="ltr" style="background-color: #f7f7f7; margin: 0; padding: 70px 0; width: 100%; -webkit-text-size-adjust: none;">\r\n			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%"><tr>\r\n<td align="center" valign="top">\r\n						<div id="template_header_image">\r\n													</div>\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Received 1024 bytes: '						<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_container" style="background-color: #ffffff; border: 1px solid #dedede; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); border-radius: 3px;">\r\n<tr>\r\n<td align="center" valign="top">\r\n									<!-- Header -->\r\n									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header" style='background-color: #96588a; color: #ffffff; border-bottom: 0; font-weight: bold; line-height: 100%; vertical-align: middle; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; border-radius: 3px 3px 0 0;'><tr>\r\n<td id="header_wrapper" style="padding: 36px 48px; display: block;">\r\n												<h1 style='font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 30px; font-weight: 300; line-height: 150%; margin: 0; text-align: left; text-shadow: 0 1px 0 #ab79a1; color: #ffffff;'>Thank you for your order</h1>\r\n											</td>\r\n										</tr></table>\r\n<!-- End Header -->\r\n</td>\r\n							</tr>\r\n<tr>\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Received 1024 bytes: '<td align="center" valign="top">\r\n									<!-- Body -->\r\n									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_body"><tr>\r\n<td valign="top" id="body_content" style="background-color: #ffffff;">\r\n												<!-- Content -->\r\n												<table border="0" cellpadding="20" cellspacing="0" width="100%"><tr>\r\n<td valign="top" style="padding: 48px 48px 0;">\r\n															<div id="body_content_inner" style='color: #636363; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 14px; line-height: 150%; text-align: left;'>\r\n\r\n<p style="margin: 0 0 16px;">Hi John,</p>\r\n<p style="margin: 0 0 16px;">Just to let you know — we've received your order #141, and it is now being processed:</p>\r\n\r\n\r\n<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>\r\n	[Order #141] (June 9, 2019)</h2>\r\n\r\n<div style="margin-bottom: 40p'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Received 1024 bytes: 'x;">\r\n	<table class="td" cellspacing="0" cellpadding="6" border="1" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n<thead><tr>\r\n<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Product</th>\r\n				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Quantity</th>\r\n				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Price</th>\r\n			</tr></thead>\r\n<tbody><tr class="order_item">\r\n<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; word-wrap: break-word;">\r\n		Reservation Confirmation		</td>\r\n		<td class="td" style="colo'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Received 1024 bytes: 'r: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n			1		</td>\r\n		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n			<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span>		</td>\r\n	</tr></tbody>\r\n<tfoot>\r\n<tr>\r\n<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;">Subtotal:</th>\r\n						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>\r\n					</tr>\r\n<tr>\r\n<th class'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Received 1024 bytes: '="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Total:</th>\r\n						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>\r\n					</tr>\r\n<tr>\r\n<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Note:</th>\r\n					<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">140</td>\r\n				</tr>\r\n</tfoot>\r\n</table>\r\n</div>\r\n\r\n<table id="addresses" cellspacing="0" cellpadding="0" border="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding: 0;"><tr>\r\n<td valign="top" width="50%" style="text-align: left; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-ser'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Received 1024 bytes: 'if; border: 0; padding: 0;">\r\n			<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>Billing address</h2>\r\n\r\n			<address class="address" style="padding: 12px; color: #636363; border: 1px solid #e5e5e5;">\r\n				John Doe									<br>55669988													<br>John@doe.com							</address>\r\n		</td>\r\n			</tr></table>\r\n<p style="margin: 0 0 16px;">\r\nThanks!</p>\r\n															</div>\r\n														</td>\r\n													</tr></table>\r\n<!-- End Content -->\r\n</td>\r\n										</tr></table>\r\n<!-- End Body -->\r\n</td>\r\n							</tr>\r\n<tr>\r\n<td align="center" valign="top">\r\n									<!-- Footer -->\r\n									<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer"><tr>\r\n<td valign="top" style="padding: 0; border-radius: 6px;">\r\n												<table border="0" cellpadding="10" cellspacing="0" width="100%"><tr>\r\n<td colspan="2" valign="middle" id="credit"'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Received 567 bytes: ' style='border-radius: 6px; border: 0; color: #c09bb9; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 125%; text-align: center; padding: 0 48px 48px 48px;'>\r\n															<p>meal<br>Built with <a href="https://woocommerce.com/" style="color: #96588a; font-weight: normal; text-decoration: underline;">WooCommerce</a></p>\r\n														</td>\r\n													</tr></table>\r\n</td>\r\n										</tr></table>\r\n<!-- End Footer -->\r\n</td>\r\n							</tr>\r\n</table>\r\n</td>\r\n				</tr></table>\r\n</div>\r\n	</body>\r\n</html>\r\n\r\n.\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2019/06/09 16:14:15 Parsing Content from string: 'To: John@doe.com
+Subject: Your meal order has been received!
+X-PHP-Originating-Script: 1000:class-phpmailer.php
+Date: Sun, 9 Jun 2019 16:14:15 +0000
+From: meal <dev-email@flywheel.local>
+Reply-To: meal <dev-email@flywheel.local>
+Message-ID: <8876c92db326e584242f47f8b7bb0a70@meal.local>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>meal</title>
+</head>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="padding: 0;">
+		<div id="wrapper" dir="ltr" style="background-color: #f7f7f7; margin: 0; padding: 70px 0; width: 100%; -webkit-text-size-adjust: none;">
+			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%"><tr>
+<td align="center" valign="top">
+						<div id="template_header_image">
+													</div>
+						<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_container" style="background-color: #ffffff; border: 1px solid #dedede; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); border-radius: 3px;">
+<tr>
+<td align="center" valign="top">
+									<!-- Header -->
+									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header" style='background-color: #96588a; color: #ffffff; border-bottom: 0; font-weight: bold; line-height: 100%; vertical-align: middle; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; border-radius: 3px 3px 0 0;'><tr>
+<td id="header_wrapper" style="padding: 36px 48px; display: block;">
+												<h1 style='font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 30px; font-weight: 300; line-height: 150%; margin: 0; text-align: left; text-shadow: 0 1px 0 #ab79a1; color: #ffffff;'>Thank you for your order</h1>
+											</td>
+										</tr></table>
+<!-- End Header -->
+</td>
+							</tr>
+<tr>
+<td align="center" valign="top">
+									<!-- Body -->
+									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_body"><tr>
+<td valign="top" id="body_content" style="background-color: #ffffff;">
+												<!-- Content -->
+												<table border="0" cellpadding="20" cellspacing="0" width="100%"><tr>
+<td valign="top" style="padding: 48px 48px 0;">
+															<div id="body_content_inner" style='color: #636363; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 14px; line-height: 150%; text-align: left;'>
+
+<p style="margin: 0 0 16px;">Hi John,</p>
+<p style="margin: 0 0 16px;">Just to let you know — we've received your order #141, and it is now being processed:</p>
+
+
+<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>
+	[Order #141] (June 9, 2019)</h2>
+
+<div style="margin-bottom: 40px;">
+	<table class="td" cellspacing="0" cellpadding="6" border="1" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+<thead><tr>
+<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Product</th>
+				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Quantity</th>
+				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Price</th>
+			</tr></thead>
+<tbody><tr class="order_item">
+<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; word-wrap: break-word;">
+		Reservation Confirmation		</td>
+		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+			1		</td>
+		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+			<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span>		</td>
+	</tr></tbody>
+<tfoot>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;">Subtotal:</th>
+						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>
+					</tr>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Total:</th>
+						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>
+					</tr>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Note:</th>
+					<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">140</td>
+				</tr>
+</tfoot>
+</table>
+</div>
+
+<table id="addresses" cellspacing="0" cellpadding="0" border="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding: 0;"><tr>
+<td valign="top" width="50%" style="text-align: left; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; border: 0; padding: 0;">
+			<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>Billing address</h2>
+
+			<address class="address" style="padding: 12px; color: #636363; border: 1px solid #e5e5e5;">
+				John Doe									<br>55669988													<br>John@doe.com							</address>
+		</td>
+			</tr></table>
+<p style="margin: 0 0 16px;">
+Thanks!</p>
+															</div>
+														</td>
+													</tr></table>
+<!-- End Content -->
+</td>
+										</tr></table>
+<!-- End Body -->
+</td>
+							</tr>
+<tr>
+<td align="center" valign="top">
+									<!-- Footer -->
+									<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer"><tr>
+<td valign="top" style="padding: 0; border-radius: 6px;">
+												<table border="0" cellpadding="10" cellspacing="0" width="100%"><tr>
+<td colspan="2" valign="middle" id="credit" style='border-radius: 6px; border: 0; color: #c09bb9; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 125%; text-align: center; padding: 0 48px 48px 48px;'>
+															<p>meal<br>Built with <a href="https://woocommerce.com/" style="color: #96588a; font-weight: normal; text-decoration: underline;">WooCommerce</a></p>
+														</td>
+													</tr></table>
+</td>
+										</tr></table>
+<!-- End Footer -->
+</td>
+							</tr>
+</table>
+</td>
+				</tr></table>
+</div>
+	</body>
+</html>
+'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Storing message qCmUF9c7nm3zfseJ2Is1I92LflsVYmdNglGBKyrXAag=@mailhog.example
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Sent 80 bytes: '250 Ok: queued as qCmUF9c7nm3zfseJ2Is1I92LflsVYmdNglGBKyrXAag=@mailhog.example\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Received 6 bytes: 'QUIT\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: MAIL] Processing line: QUIT
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Sent 9 bytes: '221 Bye\r\n'
+2019/06/09 16:14:15 [SMTP 127.0.0.1:46936] Session ended
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Starting session
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Received 16 bytes: 'EHLO localhost\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: ESTABLISH] In ESTABLISH state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Sent 21 bytes: '250-Hello localhost\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Sent 16 bytes: '250-PIPELINING\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Received 35 bytes: 'MAIL FROM:<www-data@f207b5a26668>\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@f207b5a26668>
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@f207b5a26668>'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: MAIL] In MAIL state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Sent 37 bytes: '250 Sender www-data@f207b5a26668 ok\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: RCPT] In RCPT state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: RCPT] Got RCPT command
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Received 6 bytes: 'DATA\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: RCPT] Processing line: DATA
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: RCPT] In RCPT state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: RCPT] Got DATA command, switching to DATA state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Received 1024 bytes: 'To: dev-email@flywheel.local\r\nSubject: [meal]: New order #145\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Sun, 9 Jun 2019 17:31:19 +0000\r\nFrom: meal <dev-email@flywheel.local>\r\nReply-To: Jamal Uddin <jamal@uddin.com>\r\nMessage-ID: <210c808ec7f07e9fc6917c366498cf88@meal.local>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Transfer-Encoding: 8bit\r\n\r\n<!DOCTYPE html>\r\n<html lang="en-US">\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">\r\n<title>meal</title>\r\n</head>\r\n<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="padding: 0;">\r\n		<div id="wrapper" dir="ltr" style="background-color: #f7f7f7; margin: 0; padding: 70px 0; width: 100%; -webkit-text-size-adjust: none;">\r\n			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%"><tr>\r\n<td align="center" valign="top">\r\n						<div id="template_header_image">\r\n													</div>\r\n		'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Received 1024 bytes: '				<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_container" style="background-color: #ffffff; border: 1px solid #dedede; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); border-radius: 3px;">\r\n<tr>\r\n<td align="center" valign="top">\r\n									<!-- Header -->\r\n									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header" style='background-color: #96588a; color: #ffffff; border-bottom: 0; font-weight: bold; line-height: 100%; vertical-align: middle; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; border-radius: 3px 3px 0 0;'><tr>\r\n<td id="header_wrapper" style="padding: 36px 48px; display: block;">\r\n												<h1 style='font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 30px; font-weight: 300; line-height: 150%; margin: 0; text-align: left; text-shadow: 0 1px 0 #ab79a1; color: #ffffff;'>New Order: #145</h1>\r\n											</td>\r\n										</tr></table>\r\n<!-- End Header -->\r\n</td>\r\n							</tr>\r\n<tr>\r\n<td align="'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Received 1024 bytes: 'center" valign="top">\r\n									<!-- Body -->\r\n									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_body"><tr>\r\n<td valign="top" id="body_content" style="background-color: #ffffff;">\r\n												<!-- Content -->\r\n												<table border="0" cellpadding="20" cellspacing="0" width="100%"><tr>\r\n<td valign="top" style="padding: 48px 48px 0;">\r\n															<div id="body_content_inner" style='color: #636363; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 14px; line-height: 150%; text-align: left;'>\r\n\r\n<p style="margin: 0 0 16px;">You’ve received the following order from Jamal Uddin:</p>\r\n<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>\r\n	<a class="link" href="http://meal.local/wp-admin/post.php?post=145&amp;action=edit" style="font-weight: normal; text-decoration: underline; color: #96588a;"'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Received 1024 bytes: '>[Order #145]</a> (June 9, 2019)</h2>\r\n\r\n<div style="margin-bottom: 40px;">\r\n	<table class="td" cellspacing="0" cellpadding="6" border="1" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n<thead><tr>\r\n<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Product</th>\r\n				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Quantity</th>\r\n				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Price</th>\r\n			</tr></thead>\r\n<tbody><tr class="order_item">\r\n<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; word-wrap: break-w'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Received 1024 bytes: 'ord;">\r\n		Reservation Confirmation		</td>\r\n		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n			1		</td>\r\n		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n			<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span>		</td>\r\n	</tr></tbody>\r\n<tfoot>\r\n<tr>\r\n<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;">Subtotal:</th>\r\n						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-cu'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Received 1024 bytes: 'rrencySymbol">৳ </span>5.00</span></td>\r\n					</tr>\r\n<tr>\r\n<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Total:</th>\r\n						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>\r\n					</tr>\r\n<tr>\r\n<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Note:</th>\r\n					<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">144</td>\r\n				</tr>\r\n</tfoot>\r\n</table>\r\n</div>\r\n\r\n<table id="addresses" cellspacing="0" cellpadding="0" border="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding: 0;"><tr>\r\n<td valign="top" width="50%" style="text-align: '
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Received 1024 bytes: 'left; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; border: 0; padding: 0;">\r\n			<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>Billing address</h2>\r\n\r\n			<address class="address" style="padding: 12px; color: #636363; border: 1px solid #e5e5e5;">\r\n				Jamal Uddin									<br>995522													<br>jamal@uddin.com							</address>\r\n		</td>\r\n			</tr></table>\r\n</div>\r\n														</td>\r\n													</tr></table>\r\n<!-- End Content -->\r\n</td>\r\n										</tr></table>\r\n<!-- End Body -->\r\n</td>\r\n							</tr>\r\n<tr>\r\n<td align="center" valign="top">\r\n									<!-- Footer -->\r\n									<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer"><tr>\r\n<td valign="top" style="padding: 0; border-radius: 6px;">\r\n												<table border="0" cellpadding="10" cellspacing="0" width="100%"><tr>\r\n<td colspan="2" valign="mid'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Received 583 bytes: 'dle" id="credit" style='border-radius: 6px; border: 0; color: #c09bb9; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 125%; text-align: center; padding: 0 48px 48px 48px;'>\r\n															<p>meal<br>Built with <a href="https://woocommerce.com/" style="color: #96588a; font-weight: normal; text-decoration: underline;">WooCommerce</a></p>\r\n														</td>\r\n													</tr></table>\r\n</td>\r\n										</tr></table>\r\n<!-- End Footer -->\r\n</td>\r\n							</tr>\r\n</table>\r\n</td>\r\n				</tr></table>\r\n</div>\r\n	</body>\r\n</html>\r\n\r\n.\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2019/06/09 17:31:19 Parsing Content from string: 'To: dev-email@flywheel.local
+Subject: [meal]: New order #145
+X-PHP-Originating-Script: 1000:class-phpmailer.php
+Date: Sun, 9 Jun 2019 17:31:19 +0000
+From: meal <dev-email@flywheel.local>
+Reply-To: Jamal Uddin <jamal@uddin.com>
+Message-ID: <210c808ec7f07e9fc6917c366498cf88@meal.local>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>meal</title>
+</head>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="padding: 0;">
+		<div id="wrapper" dir="ltr" style="background-color: #f7f7f7; margin: 0; padding: 70px 0; width: 100%; -webkit-text-size-adjust: none;">
+			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%"><tr>
+<td align="center" valign="top">
+						<div id="template_header_image">
+													</div>
+						<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_container" style="background-color: #ffffff; border: 1px solid #dedede; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); border-radius: 3px;">
+<tr>
+<td align="center" valign="top">
+									<!-- Header -->
+									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header" style='background-color: #96588a; color: #ffffff; border-bottom: 0; font-weight: bold; line-height: 100%; vertical-align: middle; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; border-radius: 3px 3px 0 0;'><tr>
+<td id="header_wrapper" style="padding: 36px 48px; display: block;">
+												<h1 style='font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 30px; font-weight: 300; line-height: 150%; margin: 0; text-align: left; text-shadow: 0 1px 0 #ab79a1; color: #ffffff;'>New Order: #145</h1>
+											</td>
+										</tr></table>
+<!-- End Header -->
+</td>
+							</tr>
+<tr>
+<td align="center" valign="top">
+									<!-- Body -->
+									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_body"><tr>
+<td valign="top" id="body_content" style="background-color: #ffffff;">
+												<!-- Content -->
+												<table border="0" cellpadding="20" cellspacing="0" width="100%"><tr>
+<td valign="top" style="padding: 48px 48px 0;">
+															<div id="body_content_inner" style='color: #636363; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 14px; line-height: 150%; text-align: left;'>
+
+<p style="margin: 0 0 16px;">You’ve received the following order from Jamal Uddin:</p>
+<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>
+	<a class="link" href="http://meal.local/wp-admin/post.php?post=145&amp;action=edit" style="font-weight: normal; text-decoration: underline; color: #96588a;">[Order #145]</a> (June 9, 2019)</h2>
+
+<div style="margin-bottom: 40px;">
+	<table class="td" cellspacing="0" cellpadding="6" border="1" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+<thead><tr>
+<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Product</th>
+				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Quantity</th>
+				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Price</th>
+			</tr></thead>
+<tbody><tr class="order_item">
+<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; word-wrap: break-word;">
+		Reservation Confirmation		</td>
+		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+			1		</td>
+		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+			<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span>		</td>
+	</tr></tbody>
+<tfoot>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;">Subtotal:</th>
+						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>
+					</tr>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Total:</th>
+						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>
+					</tr>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Note:</th>
+					<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">144</td>
+				</tr>
+</tfoot>
+</table>
+</div>
+
+<table id="addresses" cellspacing="0" cellpadding="0" border="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding: 0;"><tr>
+<td valign="top" width="50%" style="text-align: left; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; border: 0; padding: 0;">
+			<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>Billing address</h2>
+
+			<address class="address" style="padding: 12px; color: #636363; border: 1px solid #e5e5e5;">
+				Jamal Uddin									<br>995522													<br>jamal@uddin.com							</address>
+		</td>
+			</tr></table>
+</div>
+														</td>
+													</tr></table>
+<!-- End Content -->
+</td>
+										</tr></table>
+<!-- End Body -->
+</td>
+							</tr>
+<tr>
+<td align="center" valign="top">
+									<!-- Footer -->
+									<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer"><tr>
+<td valign="top" style="padding: 0; border-radius: 6px;">
+												<table border="0" cellpadding="10" cellspacing="0" width="100%"><tr>
+<td colspan="2" valign="middle" id="credit" style='border-radius: 6px; border: 0; color: #c09bb9; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 125%; text-align: center; padding: 0 48px 48px 48px;'>
+															<p>meal<br>Built with <a href="https://woocommerce.com/" style="color: #96588a; font-weight: normal; text-decoration: underline;">WooCommerce</a></p>
+														</td>
+													</tr></table>
+</td>
+										</tr></table>
+<!-- End Footer -->
+</td>
+							</tr>
+</table>
+</td>
+				</tr></table>
+</div>
+	</body>
+</html>
+'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Storing message fiunyx-w8NTK18nE45LsaYo4JV3Lz6Kg5jqm0k7b3WA=@mailhog.example
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Sent 80 bytes: '250 Ok: queued as fiunyx-w8NTK18nE45LsaYo4JV3Lz6Kg5jqm0k7b3WA=@mailhog.example\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Received 6 bytes: 'QUIT\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: MAIL] Processing line: QUIT
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Sent 9 bytes: '221 Bye\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36204] Session ended
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Starting session
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Received 16 bytes: 'EHLO localhost\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: ESTABLISH] In ESTABLISH state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Sent 21 bytes: '250-Hello localhost\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Sent 16 bytes: '250-PIPELINING\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Received 35 bytes: 'MAIL FROM:<www-data@f207b5a26668>\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@f207b5a26668>
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@f207b5a26668>'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: MAIL] In MAIL state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Sent 37 bytes: '250 Sender www-data@f207b5a26668 ok\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: RCPT] In RCPT state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: RCPT] Got RCPT command
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Received 6 bytes: 'DATA\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: RCPT] Processing line: DATA
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: RCPT] In RCPT state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: RCPT] Got DATA command, switching to DATA state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Received 1024 bytes: 'To: jamal@uddin.com\r\nSubject: Your meal order has been received!\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Sun, 9 Jun 2019 17:31:19 +0000\r\nFrom: meal <dev-email@flywheel.local>\r\nReply-To: meal <dev-email@flywheel.local>\r\nMessage-ID: <ee90c62308652e30fb3a45e2e60b63f8@meal.local>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Transfer-Encoding: 8bit\r\n\r\n<!DOCTYPE html>\r\n<html lang="en-US">\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">\r\n<title>meal</title>\r\n</head>\r\n<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="padding: 0;">\r\n		<div id="wrapper" dir="ltr" style="background-color: #f7f7f7; margin: 0; padding: 70px 0; width: 100%; -webkit-text-size-adjust: none;">\r\n			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%"><tr>\r\n<td align="center" valign="top">\r\n						<div id="template_header_image">\r\n													</div'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Received 1024 bytes: '>\r\n						<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_container" style="background-color: #ffffff; border: 1px solid #dedede; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); border-radius: 3px;">\r\n<tr>\r\n<td align="center" valign="top">\r\n									<!-- Header -->\r\n									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header" style='background-color: #96588a; color: #ffffff; border-bottom: 0; font-weight: bold; line-height: 100%; vertical-align: middle; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; border-radius: 3px 3px 0 0;'><tr>\r\n<td id="header_wrapper" style="padding: 36px 48px; display: block;">\r\n												<h1 style='font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 30px; font-weight: 300; line-height: 150%; margin: 0; text-align: left; text-shadow: 0 1px 0 #ab79a1; color: #ffffff;'>Thank you for your order</h1>\r\n											</td>\r\n										</tr></table>\r\n<!-- End Header -->\r\n</td>\r\n							</tr>\r\n<tr'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Received 1024 bytes: '>\r\n<td align="center" valign="top">\r\n									<!-- Body -->\r\n									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_body"><tr>\r\n<td valign="top" id="body_content" style="background-color: #ffffff;">\r\n												<!-- Content -->\r\n												<table border="0" cellpadding="20" cellspacing="0" width="100%"><tr>\r\n<td valign="top" style="padding: 48px 48px 0;">\r\n															<div id="body_content_inner" style='color: #636363; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 14px; line-height: 150%; text-align: left;'>\r\n\r\n<p style="margin: 0 0 16px;">Hi Jamal,</p>\r\n<p style="margin: 0 0 16px;">Just to let you know — we've received your order #145, and it is now being processed:</p>\r\n\r\n\r\n<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>\r\n	[Order #145] (June 9, 2019)</h2>\r\n\r\n<div style="margin-bottom:'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Received 1024 bytes: ' 40px;">\r\n	<table class="td" cellspacing="0" cellpadding="6" border="1" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n<thead><tr>\r\n<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Product</th>\r\n				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Quantity</th>\r\n				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Price</th>\r\n			</tr></thead>\r\n<tbody><tr class="order_item">\r\n<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; word-wrap: break-word;">\r\n		Reservation Confirmation		</td>\r\n		<td class="td" style="'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Received 1024 bytes: 'color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n			1		</td>\r\n		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">\r\n			<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span>		</td>\r\n	</tr></tbody>\r\n<tfoot>\r\n<tr>\r\n<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;">Subtotal:</th>\r\n						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>\r\n					</tr>\r\n<tr>\r\n<th c'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Received 1024 bytes: 'lass="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Total:</th>\r\n						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>\r\n					</tr>\r\n<tr>\r\n<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Note:</th>\r\n					<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">144</td>\r\n				</tr>\r\n</tfoot>\r\n</table>\r\n</div>\r\n\r\n<table id="addresses" cellspacing="0" cellpadding="0" border="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding: 0;"><tr>\r\n<td valign="top" width="50%" style="text-align: left; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Received 1024 bytes: '-serif; border: 0; padding: 0;">\r\n			<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>Billing address</h2>\r\n\r\n			<address class="address" style="padding: 12px; color: #636363; border: 1px solid #e5e5e5;">\r\n				Jamal Uddin									<br>995522													<br>jamal@uddin.com							</address>\r\n		</td>\r\n			</tr></table>\r\n<p style="margin: 0 0 16px;">\r\nThanks!</p>\r\n															</div>\r\n														</td>\r\n													</tr></table>\r\n<!-- End Content -->\r\n</td>\r\n										</tr></table>\r\n<!-- End Body -->\r\n</td>\r\n							</tr>\r\n<tr>\r\n<td align="center" valign="top">\r\n									<!-- Footer -->\r\n									<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer"><tr>\r\n<td valign="top" style="padding: 0; border-radius: 6px;">\r\n												<table border="0" cellpadding="10" cellspacing="0" width="100%"><tr>\r\n<td colspan="2" valign="middle" id='
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Received 575 bytes: '"credit" style='border-radius: 6px; border: 0; color: #c09bb9; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 125%; text-align: center; padding: 0 48px 48px 48px;'>\r\n															<p>meal<br>Built with <a href="https://woocommerce.com/" style="color: #96588a; font-weight: normal; text-decoration: underline;">WooCommerce</a></p>\r\n														</td>\r\n													</tr></table>\r\n</td>\r\n										</tr></table>\r\n<!-- End Footer -->\r\n</td>\r\n							</tr>\r\n</table>\r\n</td>\r\n				</tr></table>\r\n</div>\r\n	</body>\r\n</html>\r\n\r\n.\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2019/06/09 17:31:19 Parsing Content from string: 'To: jamal@uddin.com
+Subject: Your meal order has been received!
+X-PHP-Originating-Script: 1000:class-phpmailer.php
+Date: Sun, 9 Jun 2019 17:31:19 +0000
+From: meal <dev-email@flywheel.local>
+Reply-To: meal <dev-email@flywheel.local>
+Message-ID: <ee90c62308652e30fb3a45e2e60b63f8@meal.local>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>meal</title>
+</head>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="padding: 0;">
+		<div id="wrapper" dir="ltr" style="background-color: #f7f7f7; margin: 0; padding: 70px 0; width: 100%; -webkit-text-size-adjust: none;">
+			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%"><tr>
+<td align="center" valign="top">
+						<div id="template_header_image">
+													</div>
+						<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_container" style="background-color: #ffffff; border: 1px solid #dedede; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); border-radius: 3px;">
+<tr>
+<td align="center" valign="top">
+									<!-- Header -->
+									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header" style='background-color: #96588a; color: #ffffff; border-bottom: 0; font-weight: bold; line-height: 100%; vertical-align: middle; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; border-radius: 3px 3px 0 0;'><tr>
+<td id="header_wrapper" style="padding: 36px 48px; display: block;">
+												<h1 style='font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 30px; font-weight: 300; line-height: 150%; margin: 0; text-align: left; text-shadow: 0 1px 0 #ab79a1; color: #ffffff;'>Thank you for your order</h1>
+											</td>
+										</tr></table>
+<!-- End Header -->
+</td>
+							</tr>
+<tr>
+<td align="center" valign="top">
+									<!-- Body -->
+									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_body"><tr>
+<td valign="top" id="body_content" style="background-color: #ffffff;">
+												<!-- Content -->
+												<table border="0" cellpadding="20" cellspacing="0" width="100%"><tr>
+<td valign="top" style="padding: 48px 48px 0;">
+															<div id="body_content_inner" style='color: #636363; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 14px; line-height: 150%; text-align: left;'>
+
+<p style="margin: 0 0 16px;">Hi Jamal,</p>
+<p style="margin: 0 0 16px;">Just to let you know — we've received your order #145, and it is now being processed:</p>
+
+
+<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>
+	[Order #145] (June 9, 2019)</h2>
+
+<div style="margin-bottom: 40px;">
+	<table class="td" cellspacing="0" cellpadding="6" border="1" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+<thead><tr>
+<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Product</th>
+				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Quantity</th>
+				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Price</th>
+			</tr></thead>
+<tbody><tr class="order_item">
+<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; word-wrap: break-word;">
+		Reservation Confirmation		</td>
+		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+			1		</td>
+		<td class="td" style="color: #636363; border: 1px solid #e5e5e5; padding: 12px; text-align: left; vertical-align: middle; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">
+			<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span>		</td>
+	</tr></tbody>
+<tfoot>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;">Subtotal:</th>
+						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left; border-top-width: 4px;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>
+					</tr>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Total:</th>
+						<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">৳ </span>5.00</span></td>
+					</tr>
+<tr>
+<th class="td" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">Note:</th>
+					<td class="td" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;">144</td>
+				</tr>
+</tfoot>
+</table>
+</div>
+
+<table id="addresses" cellspacing="0" cellpadding="0" border="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding: 0;"><tr>
+<td valign="top" width="50%" style="text-align: left; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; border: 0; padding: 0;">
+			<h2 style='color: #96588a; display: block; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;'>Billing address</h2>
+
+			<address class="address" style="padding: 12px; color: #636363; border: 1px solid #e5e5e5;">
+				Jamal Uddin									<br>995522													<br>jamal@uddin.com							</address>
+		</td>
+			</tr></table>
+<p style="margin: 0 0 16px;">
+Thanks!</p>
+															</div>
+														</td>
+													</tr></table>
+<!-- End Content -->
+</td>
+										</tr></table>
+<!-- End Body -->
+</td>
+							</tr>
+<tr>
+<td align="center" valign="top">
+									<!-- Footer -->
+									<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer"><tr>
+<td valign="top" style="padding: 0; border-radius: 6px;">
+												<table border="0" cellpadding="10" cellspacing="0" width="100%"><tr>
+<td colspan="2" valign="middle" id="credit" style='border-radius: 6px; border: 0; color: #c09bb9; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 12px; line-height: 125%; text-align: center; padding: 0 48px 48px 48px;'>
+															<p>meal<br>Built with <a href="https://woocommerce.com/" style="color: #96588a; font-weight: normal; text-decoration: underline;">WooCommerce</a></p>
+														</td>
+													</tr></table>
+</td>
+										</tr></table>
+<!-- End Footer -->
+</td>
+							</tr>
+</table>
+</td>
+				</tr></table>
+</div>
+	</body>
+</html>
+'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Storing message Q3cbqy0gnhPAWdB70AKtiNcq_HqyHLFWvP-MlGu6ZN0=@mailhog.example
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Sent 80 bytes: '250 Ok: queued as Q3cbqy0gnhPAWdB70AKtiNcq_HqyHLFWvP-MlGu6ZN0=@mailhog.example\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Received 6 bytes: 'QUIT\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: MAIL] Processing line: QUIT
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Sent 9 bytes: '221 Bye\r\n'
+2019/06/09 17:31:19 [SMTP 127.0.0.1:36206] Session ended

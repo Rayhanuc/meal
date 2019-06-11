@@ -14,7 +14,7 @@
             jQuery(".portfolio-filter li").removeClass("active");
             jQuery(this).addClass("active");
 
-            var filterValue = $(this).attr("data-filter");
+            var filterValue = jQuery(this).attr("data-filter");
             jQuery(".portfolio-list").isotope({
                 filter: filterValue,
             });

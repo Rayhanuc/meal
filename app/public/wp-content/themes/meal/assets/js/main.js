@@ -1,6 +1,6 @@
 AOS.init({
   duration: 600
-});
+})
   
 
 ;(function(jQuery) {

@@ -1,0 +1,24 @@
+2019-06-09T06:00:19+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on integer in /app/public/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-order.php:1182
+Stack trace:
+#0 /app/public/wp-content/themes/meal/functions.php(218): WC_Abstract_Order->add_product(133)
+#1 /app/public/wp-includes/class-wp-hook.php(286): meal_process_reservation('')
+#2 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#4 /app/public/wp-admin/admin-ajax.php(173): do_action('wp_ajax_reserva...')
+#5 {main}
+  thrown in /app/public/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-order.php on line 1182
+
+2019-06-09T11:53:44+00:00 CRITICAL Uncaught Error: Call to undefined function thecontent() in /app/public/wp-content/themes/meal/page.php:5
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(78): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/meal/page.php on line 5
+
+2019-06-09T12:17:32+00:00 CRITICAL syntax error, unexpected '}' in /app/public/wp-content/themes/meal/functions.php on line 279
+
+2019-06-09T12:17:37+00:00 CRITICAL syntax error, unexpected '}' in /app/public/wp-content/themes/meal/functions.php on line 279
+
+2019-06-09T12:17:41+00:00 CRITICAL syntax error, unexpected '}' in /app/public/wp-content/themes/meal/functions.php on line 279
+
