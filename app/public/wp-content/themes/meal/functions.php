@@ -207,9 +207,17 @@ function meal_process_reservation(){
 			$wp_error = '';
 			$reservation_id = wp_insert_post( $reservation_arguments,$wp_error );
 
-
+			// transient check start
+			$reservation_count = get_transient( 'res_count' )?get_transient( 'res_count' ):0;
+			// transient check end
 
 			if (!$wp_error) {
+
+				$reservation_count++;
+				set_transient('res_count',$reservation_count,0);
+
+
+
 				$_name = explode(" ",$name);
 				$order_data = array(
 					'first_name' => $_name[0],
@@ -283,6 +291,32 @@ function meal_order_status_processing($order_id){
 	}
 }
 add_filter( 'woocommerce_order_status_processing','meal_order_status_processing');
+
+
+
+function meal_change_menu($menu){
+	$reservation_count = get_transient( 'res_count' )?get_transient( 'res_count' ):0;
+	if ($reservation_count>0) {
+		$menu[5][0] = "Reservation <span class='awaiting-mod'>{$reservation_count}</span>";
+	}
+	return $menu;
+}
+add_filter('add_menu_classes','meal_change_menu');
+
+
+function meal_admin_scripts($screen){
+	$_screen = get_current_screen();
+	if ('edit.php'==$screen && 'reservation' == $_screen->post_type) {
+		delete_transient('res_count');
+	}
+}
+add_action('admin_enqueue_scripts','meal_admin_scripts');
+
+
+
+
+
+
 
 
 
