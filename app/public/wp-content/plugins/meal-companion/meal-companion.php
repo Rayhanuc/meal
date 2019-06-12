@@ -153,4 +153,8 @@ function mealc_register_my_cpts_section() {
 add_action( 'init', 'mealc_register_my_cpts_section' );
 
 
-
+function mealc_transient_demo(){
+	// set_transient('hello',34);
+	// set_transient('world',16,20);
+}
+add_action('init','mealc_transient_demo');
