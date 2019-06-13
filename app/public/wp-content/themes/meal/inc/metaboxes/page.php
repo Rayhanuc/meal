@@ -10,7 +10,7 @@ function meal_section_picker_metabox($metaboxes){
 	}
 
 	$current_page_template = get_post_meta($page_id,'_wp_page_template',true);
-	if (!in_array($current_page_template, array('page-template/landing.php'))) {
+	if (!in_array($current_page_template, array('page-templates/landing.php'))) {
 		return $metaboxes;
 	}
 
@@ -42,7 +42,7 @@ function meal_section_picker_metabox($metaboxes){
 								'options' => 'post',
 								'query_args' => array(
 									'post_type' => 'section',
-									'post_per_page' => -1,
+									'posts_per_page' => -1,
 
 								)
 							),
