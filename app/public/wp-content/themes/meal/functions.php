@@ -53,6 +53,9 @@ function meal_theme_setup(){
 			'flex-height' => false,
 		)
 	);
+
+	// Register a menu
+	register_nav_menu( 'primary', __('Main Menu','meal') );
 }
 
 add_action( 'after_setup_theme','meal_theme_setup' );
@@ -117,10 +120,16 @@ function meal_assets(){
 
 
 
-    if (is_page_template( "page-templates/landing.php" )) {    
+    if (is_page_template( "page-templates/landing.php" )) {
+    	// Reservation Form Js and ajax
     	wp_enqueue_script("meal-reservation-js",get_theme_file_uri("/assets/js/reservation.js"),array('jquery'),'1.0',true);
     	$ajaxurl = admin_url("admin-ajax.php");
     	wp_localize_script("meal-reservation-js", "mealurl",array("ajaxurl" => $ajaxurl));
+
+    	// Contact Form Js and ajax
+    	wp_enqueue_script("meal-contact-js",get_theme_file_uri("/assets/js/contact.js"),array('jquery'),'1.0',true);
+    	$ajaxurl = admin_url("admin-ajax.php");
+    	wp_localize_script("meal-contact-js", "mealurl",array("ajaxurl" => $ajaxurl));
     }
 
     wp_enqueue_script("meal-main-js",get_theme_file_uri("/assets/js/main.js"),array('jquery'),'1.0',true);
@@ -315,6 +324,21 @@ add_action('admin_enqueue_scripts','meal_admin_scripts');
 
 
 
+
+function meal_contact_email(){
+	$name = isset($_POST['name'])?$_POST['name']:'';
+	$email = isset($_POST['email'])?$_POST['email']:'';
+	$phone = isset($_POST['phone'])?$_POST['phone']:'';
+	$message = isset($_POST['message'])?$_POST['message']:'';
+
+
+	$_message = sprintf("%s \nFrom: %s\nEmail: %s\nPhone: %s",$message,$name,$email,$phone);
+	$admin_email = get_option('admin_email');
+	wp_mail($admin_email,__('Someone tried to contact you','meal'),$_message,"From:{$admin_email}\r\n");
+	die('Successful');
+}
+add_action('wp_ajax_contact','meal_contact_email');
+add_action('wp_ajax_nopriv_contact','meal_contact_email');
 
 
 

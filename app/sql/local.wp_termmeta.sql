@@ -6,4 +6,5 @@ INSERT INTO `wp_termmeta` VALUES
 (2,9,"meal_tax_featured","a:1:{s:8:\"featured\";b:1;}"),
 (3,7,"meal_tax_featured","a:1:{s:8:\"featured\";b:1;}"),
 (4,8,"meal_tax_featured","a:1:{s:8:\"featured\";b:1;}"),
-(5,3,"meal_tax_featured","a:1:{s:8:\"featured\";b:1;}");
+(5,3,"meal_tax_featured","a:1:{s:8:\"featured\";b:1;}"),
+(6,23,"product_count_product_cat","1");

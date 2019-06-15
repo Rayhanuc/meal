@@ -13,15 +13,31 @@
     <div class="site-wrap">
       
       <nav class="site-menu" id="ftco-navbar-spy">
-        <div class="site-menu-inner" id="ftco-navbar">
-          <ul class="list-unstyled">
-            <li><a href="#section-home">Home</a></li>
-            <li><a href="#section-about">About Us</a></li>
-            <li><a href="#section-menu">Our Menu</a></li>
-            <li><a href="#section-reservation">Reserve A Table</a></li>
-            <li><a href="#section-contact">Contact</a></li>
-          </ul>
-        </div>
+
+          <?php 
+
+          echo wp_nav_menu( array(
+            'location'  => 'primary',
+            'container_class' => 'site-menu-inner',
+            'menu_id'         => 'ftco-navbar',
+            'menu_class'      => 'list-unstyled',
+
+            /*'theme_location'  => '',
+            'menu'            => '',
+            'container'       => 'div',
+            'container_id'    => '',
+            'echo'            => true,
+            'fallback_cb'     => 'wp_page_menu',
+            'before'          => '',
+            'after'           => '',
+            'link_before'     => '',
+            'link_after'      => '',
+            'items_wrap'      => '<ul id = "%1$s" class = "%2$s">%3$s</ul>',
+            'depth'           => 0,
+            'walker'          => '',*/
+          ) );
+
+          ?>
       </nav>
 
       <header class="site-header">
