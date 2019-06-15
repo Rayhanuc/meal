@@ -52,7 +52,7 @@ function mealc_register_my_cpts_section() {
 		"rest_controller_class" => "WP_REST_Posts_Controller",
 		"has_archive" => false,
 		"show_in_menu" => true,
-		"show_in_nav_menus" => false,
+		"show_in_nav_menus" => true,
 		"exclude_from_search" => true,
 		"capability_type" => "post",
 		"map_meta_cap" => true,
@@ -106,13 +106,6 @@ function mealc_register_my_cpts_section() {
 
 
 
-
-
-
-
-
-
-
 	/**
 	 * Post Type: Reservation.
 	 */
@@ -158,3 +151,26 @@ function mealc_transient_demo(){
 	// set_transient('world',16,20);
 }
 add_action('init','mealc_transient_demo');
+
+
+
+
+
+function meal_change_nav_menu($menus) {
+	$string_to_replace = home_url("/")."section/";
+	if (is_front_page()) {
+		foreach ($menus as $menu) {
+			$new_url = str_replace($string_to_replace,"#",$menu->url );
+			if ($new_url != $menu->url) {
+				$new_url = rtrim($new_url,"/");
+			}
+
+			$menu->url = $new_url;
+		}
+
+		
+	}
+
+	return $menus;
+}
+add_filter('wp_nav_menu_objects','meal_change_nav_menu');

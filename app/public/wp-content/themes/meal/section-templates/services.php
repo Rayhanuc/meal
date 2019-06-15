@@ -12,7 +12,7 @@ $meal_section_description = $meal_section->post_content;
 
 
 <!-- Services section start -->
-  <div class="section bg-white services-section" data-aos="fade-up">
+  <div class="section bg-white services-section" data-aos="fade-up" id="<?php echo esc_attr($meal_section->post_name); ?>">
     <div class="container">
       <div class="row section-heading justify-content-center mb-5">
         <div class="col-md-8 text-center">
