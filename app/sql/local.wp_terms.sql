@@ -24,4 +24,5 @@ INSERT INTO `wp_terms` VALUES
 (20,"rated-3","rated-3",0),
 (21,"rated-4","rated-4",0),
 (22,"rated-5","rated-5",0),
-(23,"Uncategorized","uncategorized",0);
+(23,"Uncategorized","uncategorized",0),
+(24,"Side Menu","side-menu",0);

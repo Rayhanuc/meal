@@ -17,7 +17,7 @@ INSERT INTO `wp_usermeta` VALUES
 (13,1,"wp_user_level","10"),
 (14,1,"dismissed_wp_pointers",""),
 (15,1,"show_welcome_panel","1"),
-(16,1,"session_tokens","a:1:{s:64:\"48395511cfc872031991cc36fee342d704e1bf153c356dc064e2873938cbbca3\";a:4:{s:10:\"expiration\";i:1560614573;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36\";s:5:\"login\";i:1560441773;}}"),
+(16,1,"session_tokens","a:1:{s:64:\"fd39ff0fb82da20add8a5466f5c6f9672eaeea1a91caebb556533532c6447d8d\";a:4:{s:10:\"expiration\";i:1560847370;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36\";s:5:\"login\";i:1560674570;}}"),
 (17,1,"wp_dashboard_quick_press_last_post_id","124"),
 (18,1,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (19,1,"wp_user-settings","libraryContent=browse"),
@@ -26,7 +26,7 @@ INSERT INTO `wp_usermeta` VALUES
 (22,1,"metaboxhidden_reservation","a:1:{i:0;s:7:\"slugdiv\";}"),
 (23,1,"_woocommerce_tracks_anon_id","woo:XlGsSs5DSpheHaOUdgR6ckGv"),
 (24,1,"_woocommerce_persistent_cart_1","a:1:{s:4:\"cart\";a:0:{}}"),
-(25,1,"wc_last_active","1560384000"),
+(25,1,"wc_last_active","1560643200"),
 (27,1,"closedpostboxes_product","a:1:{i:0;s:25:\"meta-inspector-post-terms\";}"),
 (28,1,"metaboxhidden_product","a:2:{i:0;s:10:\"postcustom\";i:1;s:7:\"slugdiv\";}"),
 (29,1,"closedpostboxes_page","a:0:{}"),
@@ -37,4 +37,7 @@ INSERT INTO `wp_usermeta` VALUES
 (35,1,"dismissed_wc_admin_notice","1"),
 (36,1,"dismissed_jetpack_install_error_notice","1"),
 (37,1,"closedpostboxes_dashboard","a:0:{}"),
-(38,1,"metaboxhidden_dashboard","a:0:{}");
+(38,1,"metaboxhidden_dashboard","a:0:{}"),
+(39,1,"managenav-menuscolumnshidden","a:5:{i:0;s:11:\"link-target\";i:1;s:11:\"css-classes\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";i:4;s:15:\"title-attribute\";}"),
+(40,1,"metaboxhidden_nav-menus","a:5:{i:0;s:21:\"add-post-type-product\";i:1;s:20:\"add-post-type-recipe\";i:2;s:12:\"add-post_tag\";i:3;s:15:\"add-product_cat\";i:4;s:15:\"add-product_tag\";}"),
+(41,1,"nav_menu_recently_edited","24");

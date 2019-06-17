@@ -1,0 +1,92 @@
+2019-06-17T10:30:28+00:00 CRITICAL syntax error, unexpected ';', expecting ')' in /app/public/wp-content/themes/meal/comments.php on line 54
+
+2019-06-17T10:49:24+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function meal_comment_form_fields(), 1 passed in /app/public/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /app/public/wp-content/themes/meal/functions.php:361
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): meal_comment_form_fields(Array)
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 /app/public/wp-includes/comment-template.php(2444): apply_filters('comment_form_fi...', Array)
+#3 /app/public/wp-content/themes/meal/comments.php(57): comment_form(Array)
+#4 /app/public/wp-includes/comment-template.php(1510): require('/app/public/wp-...')
+#5 /app/public/wp-content/themes/meal/single.php(28): comments_template()
+#6 /app/public/wp-includes/template-loader.php(78): include('/app/public/wp-...')
+#7 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#8 /app/public/index.php(17): require('/app/public/wp-...')
+#9 {main}
+  thrown in /app/public/wp-content/themes/meal/functions.php on line 361
+
+2019-06-17T10:50:17+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function meal_comment_form_fields(), 1 passed in /app/public/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /app/public/wp-content/themes/meal/functions.php:361
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): meal_comment_form_fields(Array)
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 /app/public/wp-includes/comment-template.php(2444): apply_filters('comment_form_fi...', Array)
+#3 /app/public/wp-content/themes/meal/comments.php(57): comment_form(Array)
+#4 /app/public/wp-includes/comment-template.php(1510): require('/app/public/wp-...')
+#5 /app/public/wp-content/themes/meal/single.php(28): comments_template()
+#6 /app/public/wp-includes/template-loader.php(78): include('/app/public/wp-...')
+#7 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#8 /app/public/index.php(17): require('/app/public/wp-...')
+#9 {main}
+  thrown in /app/public/wp-content/themes/meal/functions.php on line 361
+
+2019-06-17T10:52:40+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function meal_comment_form_fields(), 1 passed in /app/public/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /app/public/wp-content/themes/meal/functions.php:361
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): meal_comment_form_fields(Array)
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 /app/public/wp-includes/comment-template.php(2444): apply_filters('comment_form_fi...', Array)
+#3 /app/public/wp-content/themes/meal/comments.php(57): comment_form(Array)
+#4 /app/public/wp-includes/comment-template.php(1510): require('/app/public/wp-...')
+#5 /app/public/wp-content/themes/meal/single.php(28): comments_template()
+#6 /app/public/wp-includes/template-loader.php(78): include('/app/public/wp-...')
+#7 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#8 /app/public/index.php(17): require('/app/public/wp-...')
+#9 {main}
+  thrown in /app/public/wp-content/themes/meal/functions.php on line 361
+
+2019-06-17T10:52:58+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function meal_comment_form_fields(), 1 passed in /app/public/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /app/public/wp-content/themes/meal/functions.php:361
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): meal_comment_form_fields(Array)
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 /app/public/wp-includes/comment-template.php(2444): apply_filters('comment_form_fi...', Array)
+#3 /app/public/wp-content/themes/meal/comments.php(57): comment_form(Array)
+#4 /app/public/wp-includes/comment-template.php(1510): require('/app/public/wp-...')
+#5 /app/public/wp-content/themes/meal/single.php(28): comments_template()
+#6 /app/public/wp-includes/template-loader.php(78): include('/app/public/wp-...')
+#7 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#8 /app/public/index.php(17): require('/app/public/wp-...')
+#9 {main}
+  thrown in /app/public/wp-content/themes/meal/functions.php on line 361
+
+2019-06-17T10:53:10+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function meal_comment_form_fields(), 1 passed in /app/public/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /app/public/wp-content/themes/meal/functions.php:361
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): meal_comment_form_fields(Array)
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 /app/public/wp-includes/comment-template.php(2444): apply_filters('comment_form_fi...', Array)
+#3 /app/public/wp-content/themes/meal/comments.php(57): comment_form(Array)
+#4 /app/public/wp-includes/comment-template.php(1510): require('/app/public/wp-...')
+#5 /app/public/wp-content/themes/meal/single.php(28): comments_template()
+#6 /app/public/wp-includes/template-loader.php(78): include('/app/public/wp-...')
+#7 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#8 /app/public/index.php(17): require('/app/public/wp-...')
+#9 {main}
+  thrown in /app/public/wp-content/themes/meal/functions.php on line 361
+
+2019-06-17T10:53:28+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function meal_comment_form_fields(), 1 passed in /app/public/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /app/public/wp-content/themes/meal/functions.php:361
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): meal_comment_form_fields(Array)
+#1 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 /app/public/wp-includes/comment-template.php(2444): apply_filters('comment_form_fi...', Array)
+#3 /app/public/wp-content/themes/meal/comments.php(57): comment_form(Array)
+#4 /app/public/wp-includes/comment-template.php(1510): require('/app/public/wp-...')
+#5 /app/public/wp-content/themes/meal/single.php(28): comments_template()
+#6 /app/public/wp-includes/template-loader.php(78): include('/app/public/wp-...')
+#7 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#8 /app/public/index.php(17): require('/app/public/wp-...')
+#9 {main}
+  thrown in /app/public/wp-content/themes/meal/functions.php on line 361
+
+2019-06-17T13:37:05+00:00 CRITICAL syntax error, unexpected ')' in /app/public/wp-content/themes/meal/comments.php on line 65
+
+2019-06-17T14:55:28+00:00 CRITICAL syntax error, unexpected ''comment_notes_after'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /app/public/wp-content/themes/meal/comments.php on line 66
+
+2019-06-17T15:45:06+00:00 CRITICAL syntax error, unexpected ''comment_notes_after'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /app/public/wp-content/themes/meal/comments.php on line 71
+
