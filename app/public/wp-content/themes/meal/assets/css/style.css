@@ -1918,3 +1918,37 @@ textarea.form-control {
 /*-------------------------------------------------*/
 /* End Contact Section for post / single.php     */
 /*-------------------------------------------------*/
+
+
+/*Pricing tabel css start*/
+.section-gap {
+    margin: 80px;
+}
+table th, table tr {
+    text-align: center;
+}
+
+table th {
+    background: #2f2f2f;
+    color: #fff;
+}
+
+.plan-active-color {
+  color: #146db9;
+}
+
+.button .btn {
+    background: #2f2f2f;
+    padding: 10px 17px;
+    border-color: #2f2f2f;
+}
+
+.button a:hover {
+    background: #f11d1d;
+    border-color: #f11d1d;
+}
+
+.plan-inactive-color {
+    color: #f11d1d;
+}
+/*Pricing tabel css end*/
