@@ -377,18 +377,30 @@ function meal_comment_form_fields($fields){
 
 	unset($fields['comment_notes_before']);
 	return $fields;
-	
-
-
-
-
-
 }
 add_filter('comment_form_fields','meal_comment_form_fields');
+
+
 
 function crunchify_comments_form_defaults($default) {
 	unset($default['comment_notes_after']);
 	return $default;
 }
+
+
+function meal_process_pricing_item($item){
+	if (trim($item)=='1') {
+		return '<i class="fa fa-check plan-active-color fa-2x">';
+	}else if(trim($item)=='0'){
+		return '<i class="fa fa-ellipsis-h plan-inactive-color fa-2x">';
+	}
+
+	return $item;
+}
+add_filter('meal_pricing_item','meal_process_pricing_item');
+
+
+
+
 
 
