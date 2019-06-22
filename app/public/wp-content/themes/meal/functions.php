@@ -133,6 +133,7 @@ function meal_assets(){
     	wp_localize_script("meal-contact-js", "mealurl",array("ajaxurl" => $ajaxurl));
     }
 
+    wp_enqueue_script("meal-loadmore-js",get_theme_file_uri("/assets/js/loadmore.js"),array('jquery'),'1.0',true);
     wp_enqueue_script("meal-main-js",get_theme_file_uri("/assets/js/main.js"),array('jquery'),'1.0',true);
 }
 add_action('wp_enqueue_scripts','meal_assets');
@@ -400,7 +401,10 @@ function meal_process_pricing_item($item){
 add_filter('meal_pricing_item','meal_process_pricing_item');
 
 
-
+function get_max_page_number(){
+	global $wp_query;
+	return $wp_query->max_num_pages;
+}
 
 
 

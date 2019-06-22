@@ -24,7 +24,7 @@ get_template_part('section-templates/banner');
 the_post();
 ?>
       
- <div class="main-wrap" id="section-home">
+<div class="main-wrap" id="section-home">
  	<div <?php post_class('single-post'); ?>>
  		<div class="container post-body">
  			<div class="row">

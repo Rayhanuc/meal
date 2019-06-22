@@ -831,4 +831,8 @@ INSERT INTO `wp_postmeta` VALUES
 (838,172,"_menu_item_target",""),
 (839,172,"_menu_item_classes","a:1:{i:0;s:0:\"\";}"),
 (840,172,"_menu_item_xfn",""),
-(841,172,"_menu_item_url","");
+(841,172,"_menu_item_url",""),
+(842,174,"_edit_last","1"),
+(843,174,"_wp_page_template","page-templates/pricing.php"),
+(844,174,"_edit_lock","1561147995:1"),
+(845,174,"meal-pricing-options","a:7:{s:14:\"plan-one-title\";s:10:\"Small Plan\";s:14:\"plan-two-title\";s:8:\"Big Plan\";s:15:\"plan-one-action\";s:1:\"#\";s:15:\"plan-two-action\";s:1:\"#\";s:5:\"items\";s:86:\"Item One\r\nItem Two\r\nItem Three\r\nItem Four\r\nItem Five\r\nItem Six\r\nItem Seven\r\nItem Eight\";s:14:\"plan-one-items\";s:89:\"Plan One Item One\r\nPlan One Item Two\r\nPlan One Item Three\r\nPlan One Item Four\r\n1\r\n0\r\n0\r\n1\";s:14:\"plan-two-items\";s:89:\"Plan Two Item One\r\nPlan Two Item Two\r\nPlan Two Item Three\r\nPlan Two Item Four\r\n1\r\n1\r\n1\r\n1\";}");

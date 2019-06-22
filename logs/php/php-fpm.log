@@ -173,3 +173,19 @@
 [21-Jun-2019 10:50:25] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
 [21-Jun-2019 12:00:31] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
 [21-Jun-2019 12:04:21] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[21-Jun-2019 20:16:48] NOTICE: Terminating ...
+[21-Jun-2019 20:16:48] NOTICE: exiting, bye-bye!
+[22-Jun-2019 06:26:28] NOTICE: fpm is running, pid 51
+[22-Jun-2019 06:26:28] NOTICE: ready to handle connections
+[22-Jun-2019 06:48:10] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[22-Jun-2019 06:54:41] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[22-Jun-2019 10:44:46] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[22-Jun-2019 10:45:50] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[22-Jun-2019 12:00:10] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[22-Jun-2019 12:06:24] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[22-Jun-2019 12:10:46] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[22-Jun-2019 13:43:32] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[22-Jun-2019 13:59:15] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[22-Jun-2019 15:26:35] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[22-Jun-2019 15:45:08] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[22-Jun-2019 16:43:45] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
