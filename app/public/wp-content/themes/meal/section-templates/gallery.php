@@ -18,7 +18,7 @@ $meal_section_description = $meal_section->post_content;
 			<?php echo esc_html($meal_section_title) ; ?>
         </h2>
         <?php
-        echo apply_filters( 'the_content', $meal_section_description )
+        echo apply_filters( 'the_content', $meal_section_description );
         ?>
       </div>
     </div>
@@ -29,15 +29,21 @@ $meal_section_description = $meal_section->post_content;
 <?php
 $meal_gallery_items = $meal_section_meta['portfolio'];
 $meal_items_categories = [];
+$meal_number_of_images = $meal_section_meta['nimages'];
+$meal_counter=0;
 
 foreach ($meal_gallery_items as $meal_gallery_item) {
+    if ($meal_counter>=$meal_number_of_images) {
+            break;
+    }
 	$meal_gallery_item_categories = explode(',', $meal_gallery_item['categories']);
-	foreach ($meal_gallery_item_categories as $meal_gallery_item_categorie) {
+	foreach ($meal_gallery_item_categories as $meal_gallery_item_categorie) {        
 		$meal_gallery_item_categorie = trim($meal_gallery_item_categorie);
 		if (!in_array($meal_gallery_item_categorie, $meal_items_categories)) {
 			array_push($meal_items_categories, $meal_gallery_item_categorie);
 		}
 	}
+    $meal_counter++;
 	
 }
 
@@ -67,10 +73,14 @@ foreach ($meal_gallery_items as $meal_gallery_item) {
         </div>
     </div>
 
-    <div class="row portfolio-list">
+    <div class="row portfolio-list" data-images="<?php echo esc_attr($meal_number_of_images); ?>">
 
 		<?php
+        $meal_counter=0;
 		foreach ($meal_gallery_items as $meal_gallery_item) :
+            if ($meal_counter>=$meal_number_of_images) {
+                break;
+            }
 			$meal_item_class = str_replace(","," ", $meal_gallery_item['categories']);
 			$meal_item_image_id = $meal_gallery_item['image'];
 			$meal_item_thumbnail = wp_get_attachment_image_src($meal_item_image_id,'medium');
@@ -95,10 +105,19 @@ foreach ($meal_gallery_items as $meal_gallery_item) {
         </div>
 
     	<?php
+            $meal_counter++;
 	    	endforeach;
 	    ?>
 
 
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="button-gallery">
+                <button id="loadmorep"><?php _e('Load More','meal'); ?></button>
+            </div>
+        </div>
     </div>
 </div>
 <!-- PORTFIOLIO AREA END -->

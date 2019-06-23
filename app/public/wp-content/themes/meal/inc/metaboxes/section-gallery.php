@@ -33,8 +33,12 @@ function meal_gallery_section_metabox($metaboxes) {
 				// 'title'     => __('Section 1','meal'),
 				'icon'      => 'fa fa-wifi',
 				'fields'    => array(
-
-
+					array(
+						'id'    => 'nimages',
+						'title' =>  __('Number of Images','meal'),
+						'type'  => 'text',
+						'default'  => 6,
+					),
 					// Group field / repetable field
 					array(
 						'id'              => 'portfolio',
