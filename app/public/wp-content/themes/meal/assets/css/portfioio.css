@@ -71,9 +71,9 @@
 
 
 
-/* 13. ----------> single-portfolio-item css start<---------- */
+/* 13. ----------> single-portfolio-image css start<---------- */
 
-.single-portfolio-item {
+.single-portfolio-image {
     height: 310px;
     background-size: cover;
     background-position: center;
@@ -83,7 +83,7 @@
     box-shadow: 4px 4px 5px #f1f1f1;
 }
 
-.single-portfolio-item:hover .portfolio-hover {
+.single-portfolio-image:hover .portfolio-hover {
     opacity: 1;
     visibility: visible;
 }

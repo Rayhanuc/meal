@@ -73,49 +73,60 @@ foreach ($meal_gallery_items as $meal_gallery_item) {
         </div>
     </div>
 
-    <div class="row portfolio-list" data-images="<?php echo esc_attr($meal_number_of_images); ?>">
+    <div class="row">
+            <?php
+            wp_nonce_field('loadmorep','loadmorep');
+            ?>
+        <div class="col-md-12">
+            <div class="row portfolio-list portfilio-grid"
+            data-images="<?php echo esc_attr($meal_number_of_images); ?>"
+            data-sid="<?php echo esc_attr($meal_section_id);?>"
+            data-ni="<?php echo esc_attr($meal_number_of_images); ?>"
+            >                
 
-		<?php
-        $meal_counter=0;
-		foreach ($meal_gallery_items as $meal_gallery_item) :
-            if ($meal_counter>=$meal_number_of_images) {
-                break;
-            }
-			$meal_item_class = str_replace(","," ", $meal_gallery_item['categories']);
-			$meal_item_image_id = $meal_gallery_item['image'];
-			$meal_item_thumbnail = wp_get_attachment_image_src($meal_item_image_id,'medium');
-			$meal_item_categories_array = explode(",",$meal_gallery_item['categories']);
-		?>
+        		<?php
+                $meal_counter=0;
+        		foreach ($meal_gallery_items as $meal_gallery_item) :
+                    if ($meal_counter>=$meal_number_of_images) {
+                        break;
+                    }
+        			$meal_item_class = str_replace(","," ", $meal_gallery_item['categories']);
+        			$meal_item_image_id = $meal_gallery_item['image'];
+        			$meal_item_thumbnail = wp_get_attachment_image_src($meal_item_image_id,'medium');
+        			$meal_item_categories_array = explode(",",$meal_gallery_item['categories']);
+        		?>
 
-        <div class="col-md-4 <?php echo esc_attr($meal_item_class); ?>">
-            <div class="single-portfolio-item" style="background-image: url(<?php echo esc_url($meal_item_thumbnail[0]) ; ?>);">
-                <div class="portfolio-hover">
-                    <div class="portfolio-hover-table">
-                        <div class="portfolio-hover-tablecell">
-                            <h4><?php echo esc_html($meal_gallery_item['title']) ?></h4>
-                            <?php
-                            foreach ($meal_item_categories_array as $meal_item_categorie) :
-                            printf("<span>%s </span>",trim($meal_item_categorie));
-                            endforeach;
-                            ?>
+                <div class="col-md-4 single-portfolio-item <?php echo esc_attr($meal_item_class); ?>">
+                    <div class="single-portfolio-image" style="background-image: url(<?php echo esc_url($meal_item_thumbnail[0]) ; ?>);">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-table">
+                                <div class="portfolio-hover-tablecell">
+                                    <h4><?php echo esc_html($meal_gallery_item['title']) ?></h4>
+                                    <?php
+                                    foreach ($meal_item_categories_array as $meal_item_categorie) :
+                                    printf("<span>%s </span>",trim($meal_item_categorie));
+                                    endforeach;
+                                    ?>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+            	<?php
+                    $meal_counter++;
+        	    	endforeach;
+        	    ?>
+
+
             </div>
         </div>
-
-    	<?php
-            $meal_counter++;
-	    	endforeach;
-	    ?>
-
-
     </div>
 
     <div class="row">
         <div class="col-md-12 text-center">
             <div class="button-gallery">
-                <button id="loadmorep"><?php _e('Load More','meal'); ?></button>
+                <button id="loadmorepb"><?php _e('Load More','meal'); ?></button>
             </div>
         </div>
     </div>

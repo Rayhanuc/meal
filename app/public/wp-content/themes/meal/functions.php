@@ -117,8 +117,7 @@ function meal_assets(){
     // wp_enqueue_script("meal-jquery-js","//code.jquery.com/jquery-1.11.1.min.js",null,'1.11.1',true);
 
 
-    wp_enqueue_script("meal-portfolio-js",get_theme_file_uri("/assets/js/portfolio.js"),array('jquery'),'1.0',true);
-
+    
 
 
     if (is_page_template( "page-templates/landing.php" )) {
@@ -129,8 +128,11 @@ function meal_assets(){
 
     	// Contact Form Js and ajax
     	wp_enqueue_script("meal-contact-js",get_theme_file_uri("/assets/js/contact.js"),array('jquery'),'1.0',true);
-    	$ajaxurl = admin_url("admin-ajax.php");
     	wp_localize_script("meal-contact-js", "mealurl",array("ajaxurl" => $ajaxurl));
+
+
+    	wp_enqueue_script("meal-portfolio-js",get_theme_file_uri("/assets/js/portfolio.js"),array('jquery'),'1.0',true);
+    	wp_localize_script("meal-portfolio-js", "mealurl",array("ajaxurl" => $ajaxurl));
     }
 
     wp_enqueue_script("meal-loadmore-js",get_theme_file_uri("/assets/js/loadmore.js"),array('jquery'),'1.0',true);
@@ -407,4 +409,49 @@ function get_max_page_number(){
 }
 
 
+function meal_load_portfolio_items(){
+	if (wp_verify_nonce($_POST['nonce'],'loadmorep')) {
+		$meal_section_id = $_POST['sid'];
+		$meal_offset = $_POST['offset'];
+		$meal_section_meta = get_post_meta( $meal_section_id,'meal-section-gallery',true );
+		$meal_number_of_images = $meal_section_meta['nimages'];
+		$meal_gallery_items = $meal_section_meta['portfolio'];
+		$meal_gallery_items = array_slice($meal_gallery_items, $meal_offset);
+        $meal_counter=0;
+        echo "<div class='portfolio'>";
+		foreach ($meal_gallery_items as $meal_gallery_item) :
+            if ($meal_counter >= $meal_number_of_images) {
+                break;
+            }
+			$meal_item_class = str_replace(","," ", $meal_gallery_item['categories']);
+			$meal_item_image_id = $meal_gallery_item['image'];
+			$meal_item_thumbnail = wp_get_attachment_image_src($meal_item_image_id,'medium');
+			$meal_item_categories_array = explode(",",$meal_gallery_item['categories']);
+    		?>
 
+            <div class="col-md-4 single-portfolio-item <?php echo esc_attr($meal_item_class); ?>">
+                <div class="single-portfolio-image" style="background-image: url(<?php echo esc_url($meal_item_thumbnail[0]) ; ?>);">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-table">
+                            <div class="portfolio-hover-tablecell">
+                                <h4><?php echo esc_html($meal_gallery_item['title']) ?></h4>
+                                <?php
+                                foreach ($meal_item_categories_array as $meal_item_categorie) :
+                                printf("<span>%s </span>",trim($meal_item_categorie));
+                                endforeach;
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        	<?php
+                $meal_counter++;
+    	    	endforeach;
+    	    	echo "</div>";
+	}
+	die();
+}
+add_action('wp_ajax_loadmorep','meal_load_portfolio_items');
+add_action('wp_ajax_nopriv_loadmorep','meal_load_portfolio_items');

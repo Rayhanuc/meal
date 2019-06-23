@@ -1,0 +1,14 @@
+2019-06-23T13:45:46+00:00 CRITICAL syntax error, unexpected '{', expecting '(' in /app/public/wp-content/themes/meal/functions.php on line 410
+
+2019-06-23T13:45:52+00:00 CRITICAL syntax error, unexpected '{', expecting '(' in /app/public/wp-content/themes/meal/functions.php on line 410
+
+2019-06-23T13:47:52+00:00 CRITICAL syntax error, unexpected '{', expecting '(' in /app/public/wp-content/themes/meal/functions.php on line 410
+
+2019-06-23T13:47:54+00:00 CRITICAL syntax error, unexpected '{', expecting '(' in /app/public/wp-content/themes/meal/functions.php on line 410
+
+2019-06-23T13:49:51+00:00 CRITICAL syntax error, unexpected '{', expecting '(' in /app/public/wp-content/themes/meal/functions.php on line 410
+
+2019-06-23T15:39:08+00:00 CRITICAL syntax error, unexpected ';' in /app/public/wp-content/themes/meal/functions.php on line 416
+
+2019-06-23T15:41:07+00:00 CRITICAL syntax error, unexpected ';' in /app/public/wp-content/themes/meal/functions.php on line 416
+
