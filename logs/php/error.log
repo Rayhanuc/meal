@@ -533,3 +533,14 @@ Stack trace:
 [23-Jun-2019 13:49:51 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /app/public/wp-content/themes/meal/functions.php on line 410
 [23-Jun-2019 15:39:08 UTC] PHP Parse error:  syntax error, unexpected ';' in /app/public/wp-content/themes/meal/functions.php on line 416
 [23-Jun-2019 15:41:07 UTC] PHP Parse error:  syntax error, unexpected ';' in /app/public/wp-content/themes/meal/functions.php on line 416
+[25-Jun-2019 11:04:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mdf() in /app/public/test/verify.php:11
+Stack trace:
+#0 {main}
+  thrown in /app/public/test/verify.php on line 11
+[25-Jun-2019 14:37:14 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[25-Jun-2019 14:37:16 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[25-Jun-2019 14:37:16 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[25-Jun-2019 14:39:12 UTC] PHP Warning:  Use of undefined constant condition - assumed 'condition' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/meal/functions.php on line 506
+[25-Jun-2019 14:39:19 UTC] PHP Warning:  Use of undefined constant condition - assumed 'condition' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/meal/functions.php on line 506
+[25-Jun-2019 14:40:30 UTC] PHP Warning:  Use of undefined constant condition - assumed 'condition' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/meal/functions.php on line 506
+[25-Jun-2019 14:40:33 UTC] PHP Warning:  Use of undefined constant condition - assumed 'condition' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/meal/functions.php on line 506

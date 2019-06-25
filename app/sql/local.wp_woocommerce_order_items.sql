@@ -11,4 +11,6 @@ INSERT INTO `wp_woocommerce_order_items` VALUES
 (7,"Reservation Confirmation","line_item",153),
 (8,"Reservation Confirmation","line_item",155),
 (9,"Reservation Confirmation","line_item",157),
-(10,"Reservation Confirmation","line_item",159);
+(10,"Reservation Confirmation","line_item",159),
+(11,"Reservation Confirmation","line_item",220),
+(12,"Reservation Confirmation","line_item",221);

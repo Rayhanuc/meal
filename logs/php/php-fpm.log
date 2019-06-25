@@ -224,3 +224,8 @@
 [23-Jun-2019 19:04:18] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
 [23-Jun-2019 19:22:19] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
 [23-Jun-2019 19:23:32] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[23-Jun-2019 19:47:06] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[23-Jun-2019 20:19:51] NOTICE: Terminating ...
+[23-Jun-2019 20:19:51] NOTICE: exiting, bye-bye!
+[25-Jun-2019 09:05:41] NOTICE: fpm is running, pid 23
+[25-Jun-2019 09:05:41] NOTICE: ready to handle connections

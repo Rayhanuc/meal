@@ -146,13 +146,6 @@ add_action('wp_enqueue_scripts','meal_assets');
 
 
 
-function meal_codestar_init() {
-	CSFramework_Metabox::instance(array());
-	CSFramework_Taxonomy::instance(array());
-}
-add_action('init', 'meal_codestar_init');
-
-
 function get_recipe_category($recipe_id){
 	$terms = wp_get_post_terms( $recipe_id,'category' );
 	if ($terms) {
@@ -455,3 +448,84 @@ function meal_load_portfolio_items(){
 }
 add_action('wp_ajax_loadmorep','meal_load_portfolio_items');
 add_action('wp_ajax_nopriv_loadmorep','meal_load_portfolio_items');
+
+
+// codestar_framwork start
+
+function meal_codestar_init() {
+	CSFramework_Metabox::instance(array());
+	CSFramework_Taxonomy::instance(array());
+
+	$settings = array(
+		'menu_title' => __('Meal Options','meal'),
+		'menu_type' => 'submenu',
+		'menu_parent' => 'themes.php',
+		'menu_slug' => 'meal_option_panel',
+		'framework_title' => __('Meal Options','meal'),
+		'menu_icon' => 'dashicons-dashboard',
+		'menu_position' => 20,
+		'ajax_save' => false,
+		'show_reset_all' => true		
+	);
+
+	new CSFramework( $settings, meal_get_theme_options() );
+}
+add_action('init', 'meal_codestar_init');
+
+
+function meal_get_theme_options() {
+	$options = array();
+	$options[] = array(
+		'name' => 'meal_theme_activation',
+		'tiele' => __('Theme Activation','meal'),
+		'icon' => 'fa fa-heart',
+		'fields' => array(
+			array(
+				'id' => 'meal_username',
+				'type' => 'text',
+				'title' => __('Username','meal'),
+			),
+			array(
+				'id' => 'meal_purchase_code',
+				'type' => 'text',
+				'title' => __('Purchase Code','meal'),
+			),
+		)
+	);
+
+	$token = get_option('meal_theme_token');
+
+	if (get_option('meal_theme_activation')==1) {
+		$options[count($options)-1]['fields'][] = array(
+			'id' => 'meal_download_file',
+			'type' => 'notice',
+			'class' => 'success',
+			'content' => __('Download From Here','meal'),
+		);
+	}
+
+	return $options;
+}
+
+function meal_verify_purchase(){
+	$username = cs_get_option('meal_username');
+	$purchase_code = cs_get_option('meal_purchase_code');
+	// $activated = get_option();
+	if ($username != '' && $purchase_code != '') {
+		$url = "http://meal.local/test/verify.php?u={$username}&pc={$purchase_code}";
+		$response = wp_remote_get( $url);
+		$body = $response['body'];
+		if ('error' != $body) {
+			update_option('meal_theme_activation',1);
+			update_option('meal_theme_token', $body);
+		}else {
+			update_option('meal_theme_activation',0);
+			update_option('meal_theme_token', '');
+		}
+	}else {
+		update_option('meal_theme_activation',0);
+		update_option('meal_theme_token', '');
+	}
+}
+add_action('after_setup_theme','meal_verify_purchase');
+// codestar_framwork end
