@@ -493,14 +493,18 @@ function meal_get_theme_options() {
 		)
 	);
 
+	$username = cs_get_option('meal_username');
+	$purchase_code = cs_get_option('meal_purchase_code');
 	$token = get_option('meal_theme_token');
 
 	if (get_option('meal_theme_activation')==1) {
+
+		$theme_demo_url = "http://meal.local/test/deliver.php?u={$username}&pc={$purchase_code}&token=$token&file=theme-demo";
 		$options[count($options)-1]['fields'][] = array(
 			'id' => 'meal_download_file',
 			'type' => 'notice',
 			'class' => 'success',
-			'content' => __('Download From Here','meal'),
+			'content' => "Download <a target='_blank' href='{$theme_demo_url}'>From Here</a>",
 		);
 	}
 

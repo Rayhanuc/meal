@@ -1,0 +1,35 @@
+2019-06-26T10:19:40+00:00 CRITICAL syntax error, unexpected '$options' (T_VARIABLE) in /app/public/wp-content/themes/meal/functions.php on line 503
+
+2019-06-26T10:19:41+00:00 CRITICAL syntax error, unexpected '$options' (T_VARIABLE) in /app/public/wp-content/themes/meal/functions.php on line 503
+
+2019-06-26T10:20:04+00:00 CRITICAL syntax error, unexpected '_blank' (T_STRING), expecting ')' in /app/public/wp-content/themes/meal/functions.php on line 507
+
+2019-06-26T10:20:11+00:00 CRITICAL syntax error, unexpected '_blank' (T_STRING), expecting ')' in /app/public/wp-content/themes/meal/functions.php on line 507
+
+2019-06-26T10:21:35+00:00 CRITICAL Uncaught Error: Call to undefined function csget_option() in /app/public/wp-content/themes/meal/functions.php:496
+Stack trace:
+#0 /app/public/wp-content/themes/meal/functions.php(471): meal_get_theme_options()
+#1 /app/public/wp-includes/class-wp-hook.php(286): meal_codestar_init('')
+#2 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#4 /app/public/wp-settings.php(525): do_action('init')
+#5 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#6 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#7 /app/public/wp-cron.php(39): require_once('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-content/themes/meal/functions.php on line 496
+
+2019-06-26T10:21:35+00:00 CRITICAL Uncaught Error: Call to undefined function csget_option() in /app/public/wp-content/themes/meal/functions.php:496
+Stack trace:
+#0 /app/public/wp-content/themes/meal/functions.php(471): meal_get_theme_options()
+#1 /app/public/wp-includes/class-wp-hook.php(286): meal_codestar_init('')
+#2 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#4 /app/public/wp-settings.php(525): do_action('init')
+#5 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#6 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#7 /app/public/wp-admin/admin.php(34): require_once('/app/public/wp-...')
+#8 /app/public/wp-admin/themes.php(10): require_once('/app/public/wp-...')
+#9 {main}
+  thrown in /app/public/wp-content/themes/meal/functions.php on line 496
+

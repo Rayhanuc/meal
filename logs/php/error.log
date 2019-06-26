@@ -544,3 +544,50 @@ Stack trace:
 [25-Jun-2019 14:39:19 UTC] PHP Warning:  Use of undefined constant condition - assumed 'condition' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/meal/functions.php on line 506
 [25-Jun-2019 14:40:30 UTC] PHP Warning:  Use of undefined constant condition - assumed 'condition' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/meal/functions.php on line 506
 [25-Jun-2019 14:40:33 UTC] PHP Warning:  Use of undefined constant condition - assumed 'condition' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/meal/functions.php on line 506
+[26-Jun-2019 08:19:19 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[26-Jun-2019 08:19:19 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[26-Jun-2019 10:00:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function filezize() in /app/public/test/deliver.php:23
+Stack trace:
+#0 {main}
+  thrown in /app/public/test/deliver.php on line 23
+[26-Jun-2019 10:01:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function filezize() in /app/public/test/deliver.php:23
+Stack trace:
+#0 {main}
+  thrown in /app/public/test/deliver.php on line 23
+[26-Jun-2019 10:10:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function filezize() in /app/public/test/deliver.php:23
+Stack trace:
+#0 {main}
+  thrown in /app/public/test/deliver.php on line 23
+[26-Jun-2019 10:19:40 UTC] PHP Parse error:  syntax error, unexpected '$options' (T_VARIABLE) in /app/public/wp-content/themes/meal/functions.php on line 503
+[26-Jun-2019 10:19:40 UTC] PHP Parse error:  syntax error, unexpected '$options' (T_VARIABLE) in /app/public/wp-content/themes/meal/functions.php on line 503
+[26-Jun-2019 10:20:04 UTC] PHP Parse error:  syntax error, unexpected '_blank' (T_STRING), expecting ')' in /app/public/wp-content/themes/meal/functions.php on line 507
+[26-Jun-2019 10:20:11 UTC] PHP Parse error:  syntax error, unexpected '_blank' (T_STRING), expecting ')' in /app/public/wp-content/themes/meal/functions.php on line 507
+[26-Jun-2019 10:21:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csget_option() in /app/public/wp-content/themes/meal/functions.php:496
+Stack trace:
+#0 /app/public/wp-content/themes/meal/functions.php(471): meal_get_theme_options()
+#1 /app/public/wp-includes/class-wp-hook.php(286): meal_codestar_init('')
+#2 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#4 /app/public/wp-settings.php(525): do_action('init')
+#5 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#6 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#7 /app/public/wp-cron.php(39): require_once('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-content/themes/meal/functions.php on line 496
+[26-Jun-2019 10:21:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csget_option() in /app/public/wp-content/themes/meal/functions.php:496
+Stack trace:
+#0 /app/public/wp-content/themes/meal/functions.php(471): meal_get_theme_options()
+#1 /app/public/wp-includes/class-wp-hook.php(286): meal_codestar_init('')
+#2 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#4 /app/public/wp-settings.php(525): do_action('init')
+#5 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#6 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#7 /app/public/wp-admin/admin.php(34): require_once('/app/public/wp-...')
+#8 /app/public/wp-admin/themes.php(10): require_once('/app/public/wp-...')
+#9 {main}
+  thrown in /app/public/wp-content/themes/meal/functions.php on line 496
+[26-Jun-2019 10:22:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function filezize() in /app/public/test/deliver.php:23
+Stack trace:
+#0 {main}
+  thrown in /app/public/test/deliver.php on line 23
