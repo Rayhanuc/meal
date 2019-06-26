@@ -591,3 +591,72 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /app/public/test/deliver.php on line 23
+[26-Jun-2019 12:14:36 UTC] PHP Parse error:  syntax error, unexpected ';' in /app/public/wp-content/themes/meal/functions.php on line 525
+[26-Jun-2019 12:28:04 UTC] PHP Parse error:  syntax error, unexpected ';' in /app/public/wp-content/themes/meal/functions.php on line 525
+[26-Jun-2019 12:28:30 UTC] PHP Parse error:  syntax error, unexpected ';' in /app/public/wp-content/themes/meal/functions.php on line 525
+[26-Jun-2019 12:30:52 UTC] PHP Parse error:  syntax error, unexpected ';' in /app/public/wp-content/themes/meal/functions.php on line 525
+[26-Jun-2019 12:32:04 UTC] PHP Parse error:  syntax error, unexpected ';' in /app/public/wp-content/themes/meal/functions.php on line 525
+[26-Jun-2019 13:39:24 UTC] PHP Parse error:  syntax error, unexpected 'meal_allow_external_host' (T_STRING) in /app/public/wp-content/themes/meal/functions.php on line 539
+[26-Jun-2019 13:39:24 UTC] PHP Parse error:  syntax error, unexpected 'meal_allow_external_host' (T_STRING) in /app/public/wp-content/themes/meal/functions.php on line 539
+[26-Jun-2019 13:48:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function filezize() in /app/public/test/deliver.php:23
+Stack trace:
+#0 {main}
+  thrown in /app/public/test/deliver.php on line 23
+[26-Jun-2019 13:49:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function filezize() in /app/public/test/deliver.php:23
+Stack trace:
+#0 {main}
+  thrown in /app/public/test/deliver.php on line 23
+[26-Jun-2019 13:50:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function filezize() in /app/public/test/deliver.php:23
+Stack trace:
+#0 {main}
+  thrown in /app/public/test/deliver.php on line 23
+[26-Jun-2019 13:55:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function filezize() in /app/public/test/deliver.php:23
+Stack trace:
+#0 {main}
+  thrown in /app/public/test/deliver.php on line 23
+[26-Jun-2019 13:56:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function filezize() in /app/public/test/deliver.php:23
+Stack trace:
+#0 {main}
+  thrown in /app/public/test/deliver.php on line 23
+[26-Jun-2019 13:58:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function filezize() in /app/public/test/deliver.php:23
+Stack trace:
+#0 {main}
+  thrown in /app/public/test/deliver.php on line 23
+[26-Jun-2019 13:59:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function filezize() in /app/public/test/deliver.php:23
+Stack trace:
+#0 {main}
+  thrown in /app/public/test/deliver.php on line 23
+[26-Jun-2019 14:01:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function filezize() in /app/public/test/deliver.php:23
+Stack trace:
+#0 {main}
+  thrown in /app/public/test/deliver.php on line 23
+[26-Jun-2019 14:05:13 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[26-Jun-2019 14:05:13 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[26-Jun-2019 14:05:14 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[26-Jun-2019 14:05:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function filezize() in /app/public/test/deliver.php:23
+Stack trace:
+#0 {main}
+  thrown in /app/public/test/deliver.php on line 23
+[26-Jun-2019 14:06:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function filezize() in /app/public/test/deliver.php:23
+Stack trace:
+#0 {main}
+  thrown in /app/public/test/deliver.php on line 23
+[26-Jun-2019 14:11:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function filezize() in /app/public/test/deliver.php:23
+Stack trace:
+#0 {main}
+  thrown in /app/public/test/deliver.php on line 23
+[26-Jun-2019 14:19:08 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[26-Jun-2019 14:19:09 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[26-Jun-2019 14:19:09 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[26-Jun-2019 14:23:44 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[26-Jun-2019 14:23:45 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[26-Jun-2019 14:23:45 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[26-Jun-2019 14:29:33 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[26-Jun-2019 14:29:33 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[26-Jun-2019 14:29:33 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[26-Jun-2019 14:33:14 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[26-Jun-2019 14:33:15 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[26-Jun-2019 14:33:15 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[26-Jun-2019 14:41:30 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[26-Jun-2019 14:41:31 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[26-Jun-2019 14:41:31 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569

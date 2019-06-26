@@ -499,7 +499,7 @@ function meal_get_theme_options() {
 
 	if (get_option('meal_theme_activation')==1) {
 
-		$theme_demo_url = "http://meal.local/test/deliver.php?u={$username}&pc={$purchase_code}&token=$token&file=theme-demo";
+		$theme_demo_url = "http://meal.local/test/deliver.php?u={$username}&pc={$purchase_code}&token=$token&file=duplicat-post";
 		$options[count($options)-1]['fields'][] = array(
 			'id' => 'meal_download_file',
 			'type' => 'notice',
@@ -522,6 +522,7 @@ function meal_verify_purchase(){
 		if ('error' != $body) {
 			update_option('meal_theme_activation',1);
 			update_option('meal_theme_token', $body);
+			require_once(get_theme_file_path('/inc/tgm.php'));
 		}else {
 			update_option('meal_theme_activation',0);
 			update_option('meal_theme_token', '');
@@ -533,3 +534,11 @@ function meal_verify_purchase(){
 }
 add_action('after_setup_theme','meal_verify_purchase');
 // codestar_framwork end
+
+
+function meal_allow_external_host() {
+	if ('meal.local' == $host) {
+		return true;
+	}
+}
+add_filter('http_request_host_is_external','meal_allow_external_host',10,3);

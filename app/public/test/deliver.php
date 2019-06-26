@@ -14,13 +14,13 @@ if ('' == $username || '' == $purchase_code || '' == $token || '' == $file) {
 $file = $file.".zip";
 
 if ($_token == $token) {
-	header('Content-Description: File Transer');
+	header('Content-Description: File Transfer');
 	header('Content-Type: application/octet-stream');
 	header('Content-Disposition: attachment; filename="'.basename($file).'"');
 	header('Expires: 0');
 	header('Cache-Control:must-revalidate');
 	header('Pragma: public');
-	header('Content-Length: '.filezize($file));
+	header('Content-Length: '.filesize($file));
 	readfile($file);
 }else {
 	die('error');

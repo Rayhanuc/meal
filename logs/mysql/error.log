@@ -2289,3 +2289,7 @@ Version: '5.7.23'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Comm
 2019-06-26T08:01:05.938717Z 0 [Note] Event Scheduler: Loaded 0 events
 2019-06-26T08:01:05.955661Z 0 [Note] /usr/sbin/mysqld: ready for connections.
 Version: '5.7.23'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+2019-06-26T11:06:08.811556Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 11799ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2019-06-26T12:59:07.868552Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 1339420ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2019-06-26T13:26:54.404385Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 1504431ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+2019-06-26T17:28:48.708136Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 9339102ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)

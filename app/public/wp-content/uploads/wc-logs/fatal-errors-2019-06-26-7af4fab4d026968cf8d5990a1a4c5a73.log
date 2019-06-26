@@ -33,3 +33,17 @@ Stack trace:
 #9 {main}
   thrown in /app/public/wp-content/themes/meal/functions.php on line 496
 
+2019-06-26T12:14:36+00:00 CRITICAL syntax error, unexpected ';' in /app/public/wp-content/themes/meal/functions.php on line 525
+
+2019-06-26T12:28:04+00:00 CRITICAL syntax error, unexpected ';' in /app/public/wp-content/themes/meal/functions.php on line 525
+
+2019-06-26T12:28:30+00:00 CRITICAL syntax error, unexpected ';' in /app/public/wp-content/themes/meal/functions.php on line 525
+
+2019-06-26T12:30:52+00:00 CRITICAL syntax error, unexpected ';' in /app/public/wp-content/themes/meal/functions.php on line 525
+
+2019-06-26T12:32:04+00:00 CRITICAL syntax error, unexpected ';' in /app/public/wp-content/themes/meal/functions.php on line 525
+
+2019-06-26T13:39:24+00:00 CRITICAL syntax error, unexpected 'meal_allow_external_host' (T_STRING) in /app/public/wp-content/themes/meal/functions.php on line 539
+
+2019-06-26T13:39:24+00:00 CRITICAL syntax error, unexpected 'meal_allow_external_host' (T_STRING) in /app/public/wp-content/themes/meal/functions.php on line 539
+
